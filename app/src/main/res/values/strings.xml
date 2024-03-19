@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">NoCash</string>
+    <string name="registration">Daftar</string>
+    <string name="registration1">Buat Akun Baru</string>
+    <string name="email">Email</string>
+    <string name="phone">Nomer Handphone</string>
+    <string name="status_user">Status Pengguna</string>
+    <string name="selected_item">Selected item:</string>
+    <string-array name="User">
+        <item>Penjual</item>
+        <item>Pembeli</item>
+    </string-array>
 </resources>
