@@ -1,10 +1,10 @@
 package com.beranidigital.nocash.ui
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.beranidigital.nocash.R
+import androidx.appcompat.app.AppCompatActivity
 import com.beranidigital.nocash.databinding.ActivityOnBoardingBinding
+import com.beranidigital.nocash.ui.otp.OtpActivity
 
 class OnBoardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnBoardingBinding
@@ -20,8 +20,7 @@ class OnBoardingActivity : AppCompatActivity() {
 
     private fun buttonListener(){
         binding.btnToLogin.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish()
+            // TODO: navigate to login page
         }
     }
 }
