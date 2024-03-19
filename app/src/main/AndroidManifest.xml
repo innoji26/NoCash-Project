@@ -13,13 +13,13 @@
         android:theme="@style/Theme.NoCash"
         tools:targetApi="31">
         <activity
-            android:name=".ui.registrasi.RegistrasiActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".ui.SplashScreen"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.registrasi.RegistrasiActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
