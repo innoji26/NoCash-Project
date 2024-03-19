@@ -2,7 +2,9 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.NoCash" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/blue_violet</item>
+        <item name="cornerRadius">8dp</item>
+
     </style>
 
     <style name="Theme.NoCash" parent="Base.Theme.NoCash" />
