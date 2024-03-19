@@ -23,5 +23,10 @@ class OnBoardingActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
+
+        binding.btnToRegis.setOnClickListener {
+            startActivity(Intent(this, NotifikasiActivity::class.java))
+            finish()
+        }
     }
 }

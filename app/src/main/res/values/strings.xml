@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">NoCash</string>
+    <string name="tips_scan_ktp">Foto Kartu Identitas Anda berupa KTP atau SIM dengan klik tombol \'Ambil Foto\', Pastikan kartu identitas Anda sudah jelas</string>
+    <string-array name="type_user">
+        <item name="item1">Pembeli</item>
+        <item name="item2">Penjual</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tab_text_1">Transaksi</string>
+    <string name="tab_text_2">Promo</string>
+    <string name="content_tab_transaksi">Welcome Transaksi</string>
+    <string name="content_tab_promo">Welcome Promo</string>
+    <string name="content_tab_text">This is Tab %1$d</string>
 </resources>
