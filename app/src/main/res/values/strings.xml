@@ -6,6 +6,15 @@
     <string name="phone">Nomer Handphone</string>
     <string name="status_user">Status Pengguna</string>
     <string name="selected_item">Selected item:</string>
+    <string name="have_account">Sudah punya akun ?</string>
+    <string name="image">Image\n</string>
+    <string name="otp">Masukkan OTP yang kami</string>
+    <string name="otp1">kirim SMS</string>
+    <string name="otp2">Kode-nya kami kirim kan ke nomer +62 8*******</string>
+    <string name="otp3">OTP</string>
+    <string name="repeatsend">Kirim Ulang</string>
+    <string name="numbersection">20 dtk</string>
+    <string name="next">Lanjut</string>
     <string-array name="User">
         <item>Penjual</item>
         <item>Pembeli</item>
