@@ -1,12 +1,12 @@
-package com.beranidigital.nocash
+package com.beranidigital.nocash.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.ui.AppBarConfiguration
+import com.beranidigital.nocash.R
 
-class MainActivity : AppCompatActivity() {
+class CameraActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_camera)
     }
 }

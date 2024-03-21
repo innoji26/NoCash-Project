@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">NoCash</string>
+    <string name="otp_description">Masukkan OTP yang kami kirim SMS</string>
+    <string name="send_code_to_number">Kode-nya kami kirim ke %1$s</string>
+    <string name="kirim_ulang"><u>Kirim ulang</u></string>
+    <string name="continue_btn">Lanjut</string>
+    <string name="back_button">back_button</string>
 </resources>
