@@ -15,6 +15,7 @@
     <string name="repeatsend">Kirim Ulang</string>
     <string name="numbersection">20 dtk</string>
     <string name="next">Lanjut</string>
+    <string name="securitypin">Masukan PIN Keamanan</string>
     <string-array name="User">
         <item>Penjual</item>
         <item>Pembeli</item>
