@@ -20,7 +20,7 @@ class OnBoardingActivity : AppCompatActivity() {
 
     private fun buttonListener(){
         binding.btnToLogin.setOnClickListener {
-            // TODO: navigate to login page
+            startActivity(Intent(this, LoginActivity::class.java))
         }
 
         binding.btnToRegis.setOnClickListener {
