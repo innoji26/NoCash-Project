@@ -1,5 +1,6 @@
 package com.beranidigital.nocash.ui
 
+import android.graphics.Paint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.beranidigital.nocash.R
@@ -14,6 +15,6 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
-
+        binding.forgotPassword.paintFlags = Paint.UNDERLINE_TEXT_FLAG
     }
 }

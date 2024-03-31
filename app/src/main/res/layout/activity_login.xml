@@ -6,4 +6,118 @@
     android:layout_height="match_parent"
     tools:context=".ui.LoginActivity">
 
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo_nocash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Masuk"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/layoutNoHp"
+        app:layout_constraintStart_toStartOf="@+id/layoutNoHp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutNoHp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="32dp"
+        android:hint="No Hp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtNoHp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutTypeUser"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Status Pengguna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutNoHp">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            app:simpleItems="@array/type_user" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutPassword"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTypeUser">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Lupa password?"
+        android:textColor="@color/blue_violet"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/layoutPassword"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPassword" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="500dp"
+        android:backgroundTint="@color/blue_violet"
+        android:text="Masuk"
+        android:textSize="18sp"
+        app:cornerRadius="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Belum punya akun? Daftar"
+        android:textColor="@color/blue_violet"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

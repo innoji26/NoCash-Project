@@ -22,5 +22,10 @@ class OnBoardingActivity : AppCompatActivity() {
         binding.btnToLogin.setOnClickListener {
             // TODO: navigate to login page
         }
+
+        binding.btnToRegis.setOnClickListener {
+            startActivity(Intent(this, NotifikasiActivity::class.java))
+            finish()
+        }
     }
 }
