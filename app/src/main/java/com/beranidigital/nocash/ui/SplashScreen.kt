@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.beranidigital.nocash.databinding.ActivitySplashScreenBinding
+import com.beranidigital.nocash.ui.main_navigation.MainHomeActivity
 
 class SplashScreen : AppCompatActivity() {
     private lateinit var binding: ActivitySplashScreenBinding
@@ -31,7 +32,7 @@ class SplashScreen : AppCompatActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }else{
-            startActivity(Intent(this, OnBoardingActivity::class.java))
+            startActivity(Intent(this, MainHomeActivity::class.java))
             finish()
         }
     }
