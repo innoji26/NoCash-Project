@@ -33,9 +33,6 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.SplashScreen"
-            android:exported="false" />
-        <activity
             android:name=".ui.registrasi.RegistrasiActivity"
             android:exported="true">
             <intent-filter>
