@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.ActivityRegistrasiBinding
 import com.beranidigital.nocash.ui.otp.VerifikasiOtpActivity
+import com.beranidigital.nocash.ui.pin.PinActivity
 
 class RegistrasiActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegistrasiBinding
@@ -54,7 +55,7 @@ class RegistrasiActivity : AppCompatActivity() {
 
     private fun testLayout() {
         binding.button.setOnClickListener {
-            val intent = Intent(this@RegistrasiActivity, VerifikasiOtpActivity::class.java)
+            val intent = Intent(this@RegistrasiActivity, PinActivity::class.java)
             startActivity(intent)
             finish()
         }

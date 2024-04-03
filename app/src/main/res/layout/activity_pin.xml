@@ -32,7 +32,7 @@
         android:id="@+id/passcodeView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFDFD"
+        android:background="#0E0808"
         app:correctStateColor="#71bb4d"
         app:firstInputTip="Enter a passcode of 5 digits "
         app:layout_constraintEnd_toEndOf="parent"
