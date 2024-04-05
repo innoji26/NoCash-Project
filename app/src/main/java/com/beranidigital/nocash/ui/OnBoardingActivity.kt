@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.beranidigital.nocash.databinding.ActivityOnBoardingBinding
 import com.beranidigital.nocash.ui.otp.OtpActivity
+import com.beranidigital.nocash.ui.registrasi.RegistrasiActivity
 
 class OnBoardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnBoardingBinding
@@ -24,7 +25,7 @@ class OnBoardingActivity : AppCompatActivity() {
         }
 
         binding.btnToRegis.setOnClickListener {
-            startActivity(Intent(this, NotifikasiActivity::class.java))
+            startActivity(Intent(this, RegistrasiActivity::class.java))
             finish()
         }
     }
