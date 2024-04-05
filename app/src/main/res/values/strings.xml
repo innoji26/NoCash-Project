@@ -1,12 +1,32 @@
 <resources>
     <string name="app_name">NoCash</string>
+
+    <string name="registration">Daftar</string>
+    <string name="registration1">Buat Akun Baru</string>
+    <string name="email">Email</string>
+    <string name="phone">Nomer Handphone</string>
+    <string name="status_user">Status Pengguna</string>
+    <string name="selected_item">Selected item:</string>
+    <string name="have_account">Sudah punya akun ?</string>
+    <string name="image">Image\n</string>
+    <string name="otp">Masukkan OTP yang kami</string>
+    <string name="otp1">kirim SMS</string>
+    <string name="otp2">Kode-nya kami kirim kan ke nomer +62 8*******</string>
+    <string name="otp3">OTP</string>
+    <string name="repeatsend">Kirim Ulang</string>
+    <string name="numbersection">20 dtk</string>
+    <string name="securitypin">Masukan PIN Keamanan</string>
+    <string-array name="User">
+        <item>Penjual</item>
+        <item>Pembeli</item>
+    </string-array>
+
     <string name="tips_scan_ktp">Foto Kartu Identitas Anda berupa KTP atau SIM dengan klik tombol \'Ambil Foto\', Pastikan kartu identitas Anda sudah jelas</string>
     <string-array name="type_user">
         <item name="item1">Pembeli</item>
         <item name="item2">Penjual</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
     <string name="tab_text_1">Transaksi</string>
     <string name="tab_text_2">Promo</string>
@@ -60,10 +80,11 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Beranda</string>
     <string name="history">Riwayat</string>
     <string name="invoice">Tagihan</string>
     <string name="profile">Profil</string>
+
 </resources>

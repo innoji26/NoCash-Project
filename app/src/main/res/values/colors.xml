@@ -2,10 +2,10 @@
 <resources>
     <color name="black">#66000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="violet_eggplant">#7915A8</color>
     <color name="red"> #BB3322 </color>
     <color name="green">#1EB336</color>
     <color name="blue_violet">#7D3ECE</color>
     <color name="blue_violet_dark">#7915A8</color>
     <color name="old_silver">#858585</color>
-
 </resources>
