@@ -39,13 +39,13 @@
             android:name=".ui.OnBoardingActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.LoginActivity"
+            android:name=".ui.SplashScreen"
             android:exported="false" />
         <activity
             android:name=".ui.otp.OtpActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.SplashScreen"
+            android:name=".ui.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

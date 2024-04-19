@@ -86,5 +86,7 @@
     <string name="history">Riwayat</string>
     <string name="invoice">Tagihan</string>
     <string name="profile">Profil</string>
+    <string name="textup2">2 dari 3 Langkah</string>
+    <string name="personaldata">Lakukan Pengisian Formulir Data Diri Anda</string>
 
 </resources>

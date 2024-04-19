@@ -294,7 +294,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_category" />
+                    android:src="@drawable/ic_category1" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
