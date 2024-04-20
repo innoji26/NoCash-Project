@@ -2,9 +2,8 @@ package com.beranidigital.nocash.ui
 
 import android.content.Intent
 import android.graphics.Paint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.beranidigital.nocash.R
+import androidx.appcompat.app.AppCompatActivity
 import com.beranidigital.nocash.databinding.ActivityLoginBinding
 import com.beranidigital.nocash.ui.otp.OtpActivity
 import com.beranidigital.nocash.ui.registrasi.RegistrasiActivity

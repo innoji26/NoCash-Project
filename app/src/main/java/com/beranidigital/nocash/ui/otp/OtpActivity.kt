@@ -9,7 +9,7 @@ import com.beranidigital.nocash.ui.main_navigation.MainHomeActivity
 import com.google.android.material.snackbar.Snackbar
 
 class OtpActivity: AppCompatActivity() {
-    private lateinit var binding: ActivityOtpBinding;
+    private lateinit var binding: ActivityOtpBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
