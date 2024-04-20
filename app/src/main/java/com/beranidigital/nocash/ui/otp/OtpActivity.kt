@@ -1,9 +1,11 @@
 package com.beranidigital.nocash.ui.otp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.ActivityOtpBinding
+import com.beranidigital.nocash.ui.main_navigation.MainHomeActivity
 import com.google.android.material.snackbar.Snackbar
 
 class OtpActivity: AppCompatActivity() {
@@ -30,7 +32,9 @@ class OtpActivity: AppCompatActivity() {
 
         binding.btnContinue.setOnClickListener {
             Snackbar.make(binding.root, "Verify code", Snackbar.LENGTH_SHORT).show()
-            // TODO: navigate to next page
+            val intent = Intent(this, MainHomeActivity::class.java)
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            startActivity(intent)
         }
     }
 
