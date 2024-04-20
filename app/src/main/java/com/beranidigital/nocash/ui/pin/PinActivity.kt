@@ -6,11 +6,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.beranidigital.nocash.R
+import com.beranidigital.nocash.databinding.ActivityPinBinding
 
 class PinActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityPinBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pin)
+        binding = ActivityPinBinding.inflate(layoutInflater)
 
     }
 }
