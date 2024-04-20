@@ -3,17 +3,12 @@ package com.beranidigital.nocash.ui.registrasi
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Adapter
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.ActivityRegistrasiBinding
-import com.beranidigital.nocash.ui.otp.VerifikasiOtpActivity
 import com.beranidigital.nocash.ui.pin.PinActivity
 
 class RegistrasiActivity : AppCompatActivity() {
@@ -24,14 +19,24 @@ class RegistrasiActivity : AppCompatActivity() {
         binding = ActivityRegistrasiBinding.inflate(layoutInflater)
         setContentView(binding.root)
         spinnerStat()
-        testLayout()
+
+        val toolbar = binding.toolbar
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+        toolbar.setNavigationOnClickListener {
+            onBackPressed()
+        }
+
+        binding.btnTextLogin.setOnClickListener {
+            startActivity(Intent(this, PinActivity::class.java))
+        }
     }
 
     private fun spinnerStat() {
         val spinnerButton = binding.spinner
         val itemStat = resources.getStringArray(R.array.User)
         if (spinnerButton != null) {
-            val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, itemStat)
+            val adapter = ArrayAdapter(this, R.layout.item_spinner, itemStat)
             spinnerButton.adapter = adapter
             spinnerButton.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(
@@ -50,14 +55,6 @@ class RegistrasiActivity : AppCompatActivity() {
                 override fun onNothingSelected(p0: AdapterView<*>?) {
                 }
             }
-        }
-    }
-
-    private fun testLayout() {
-        binding.button.setOnClickListener {
-            val intent = Intent(this@RegistrasiActivity, PinActivity::class.java)
-            startActivity(intent)
-            finish()
         }
     }
 }
