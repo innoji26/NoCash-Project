@@ -76,14 +76,18 @@
         android:id="@+id/gridPinNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="80dp"
-        android:horizontalSpacing="6dp"
-        android:verticalSpacing="6dp"
+        android:layout_marginVertical="20dp"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
         android:numColumns="3"
         android:columnWidth="90dp"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:stretchMode="columnWidth"
+        android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPin"
+        app:layout_constraintBottom_toBottomOf="parent"
         />
 
 

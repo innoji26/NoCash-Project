@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.view.setPadding
 import com.beranidigital.nocash.R
 
 
@@ -26,6 +27,7 @@ class PinAdapter(private val context: Context, private val numbers: ArrayList<St
 
                 val buttonText = view.findViewById<ImageView>(R.id.pin_button)
                 if(numbers[position] == "done"){
+                    buttonText.setPadding(50)
                     buttonText.setImageResource(R.drawable.ic_checklist)
                 }
                 else{
