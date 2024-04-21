@@ -1,8 +1,10 @@
 package com.beranidigital.nocash.ui.pin
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.MotionEvent
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.beranidigital.nocash.R
@@ -11,6 +13,7 @@ import com.beranidigital.nocash.ui.main_navigation.MainHomeActivity
 
 class PinActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPinBinding
+    @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPinBinding.inflate(layoutInflater)
@@ -28,8 +31,13 @@ class PinActivity : AppCompatActivity() {
         val numbers =
             arrayListOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "delete", "0", "done")
         val gridAdapterNumber = PinAdapter(this, numbers)
-        binding.gridPinNumber.setAdapter(gridAdapterNumber)
-        binding.gridPinNumber.setOnItemClickListener { _, _, position, _ ->
+        val pinNumber = binding.gridPinNumber
+        // disable gridview scrolling
+        pinNumber.setOnTouchListener { _, event ->
+            event.action == MotionEvent.ACTION_MOVE
+        }
+        pinNumber.setAdapter(gridAdapterNumber)
+        pinNumber.setOnItemClickListener { _, _, position, _ ->
             Log.d("PinActivity", "position: ${numbers[position]}")
             when (numbers[position]) {
                 "done" -> {
