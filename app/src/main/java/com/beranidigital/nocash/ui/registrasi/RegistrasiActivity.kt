@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.ActivityRegistrasiBinding
 import com.beranidigital.nocash.ui.pin.PinActivity
+import com.beranidigital.nocash.ui.pin.PinType
 
 class RegistrasiActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegistrasiBinding
@@ -28,7 +29,9 @@ class RegistrasiActivity : AppCompatActivity() {
         }
 
         binding.btnTextLogin.setOnClickListener {
-            startActivity(Intent(this, PinActivity::class.java))
+            val intent = Intent(this, PinActivity::class.java)
+            intent.putExtra("type", PinType.CREATE)
+            startActivity(intent)
         }
     }
 
