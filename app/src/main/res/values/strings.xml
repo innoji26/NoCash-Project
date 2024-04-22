@@ -88,5 +88,10 @@
     <string name="profile">Profil</string>
     <string name="textup2">2 dari 3 Langkah</string>
     <string name="personaldata">Lakukan Pengisian Formulir Data Diri Anda</string>
+    <string name="dateborn">Tanggal Lahir</string>
+    <string name="live">Alamat</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="save">Simpan</string>
 
 </resources>
