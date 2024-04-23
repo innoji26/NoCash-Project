@@ -43,9 +43,16 @@ class PinActivity : AppCompatActivity() {
                 "done" -> {
                     val text = pinValue.text.toString()
                     if (text.isNotEmpty() && text.length == 6) {
-                        val intent = Intent(this, MainHomeActivity::class.java)
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK) // delete if have save any screen after this navigation
-                        startActivity(intent)
+                        val newIntent : Intent
+                        val type = intent.getSerializableExtra("type") as PinType
+                        if (type == PinType.CREATE) {
+                            //TODO next navigation to complete registration screen
+                            newIntent = Intent(this, MainHomeActivity::class.java)
+                        } else {
+                            newIntent = Intent(this, MainHomeActivity::class.java)
+                            newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                        }
+                        startActivity(newIntent)
                     } else {
                         Log.d("PinActivity", "PIN is empty : $text")
                         Toast.makeText(this, "Harap isi PIN terlebih dahulu", Toast.LENGTH_SHORT)

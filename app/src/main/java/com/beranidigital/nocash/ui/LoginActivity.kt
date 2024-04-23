@@ -25,7 +25,9 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.btnLogin.setOnClickListener {
-            startActivity(Intent(this, OtpActivity::class.java))
+            val intent = Intent(this, OtpActivity::class.java)
+            intent.putExtra("type", "login")
+            startActivity(intent)
         }
 
         val btnTextRegister = binding.btnTextRegister

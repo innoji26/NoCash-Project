@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.ActivityOtpBinding
 import com.beranidigital.nocash.ui.main_navigation.MainHomeActivity
+import com.beranidigital.nocash.ui.pin.PinActivity
+import com.beranidigital.nocash.ui.pin.PinType
 import com.google.android.material.snackbar.Snackbar
 
 class OtpActivity: AppCompatActivity() {
@@ -32,9 +34,14 @@ class OtpActivity: AppCompatActivity() {
 
         binding.btnContinue.setOnClickListener {
             Snackbar.make(binding.root, "Verify code", Snackbar.LENGTH_SHORT).show()
-            val intent = Intent(this, MainHomeActivity::class.java)
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
-            startActivity(intent)
+            val newIntent = Intent(this, PinActivity::class.java)
+            val type = intent.getStringExtra("type")
+            if (type == "login") {
+                newIntent.putExtra("type", PinType.VERIFY)
+            } else {
+                newIntent.putExtra("type", PinType.CREATE)
+            }
+            startActivity(newIntent)
         }
     }
 
