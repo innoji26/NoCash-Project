@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.ActivityPinBinding
+import com.beranidigital.nocash.ui.complete_register.CompleteRegiterActivity
 import com.beranidigital.nocash.ui.main_navigation.MainHomeActivity
 
 class PinActivity : AppCompatActivity() {
@@ -46,8 +47,7 @@ class PinActivity : AppCompatActivity() {
                         val newIntent : Intent
                         val type = intent.getSerializableExtra("type") as PinType
                         if (type == PinType.CREATE) {
-                            //TODO next navigation to complete registration screen
-                            newIntent = Intent(this, MainHomeActivity::class.java)
+                            newIntent = Intent(this, CompleteRegiterActivity::class.java)
                         } else {
                             newIntent = Intent(this, MainHomeActivity::class.java)
                             newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
