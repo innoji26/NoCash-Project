@@ -93,5 +93,8 @@
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="save">Simpan</string>
+    <string name="step"> %1$d dari %2$d langkah </string>
+    <string name="title_pin">%1$s PIN Keamanan</string>
+
 
 </resources>

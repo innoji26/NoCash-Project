@@ -4,10 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="30dp"
     tools:context=".ui.LoginActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundTint="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_arrow_back">
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/shapeableImageView2"
+<<<<<<< HEAD
         android:layout_width="200dp"
         android:layout_height="150dp"
         android:layout_marginTop="32dp"
@@ -15,29 +39,35 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+=======
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:src="@drawable/logo_nocash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+>>>>>>> e45a33272f183c436894a3fbce10051d28625a45
 
     <TextView
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:paddingVertical="16dp"
         android:text="Masuk"
-        android:textSize="35sp"
+        android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/layoutNoHp"
-        app:layout_constraintStart_toStartOf="@+id/layoutNoHp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView2" />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layoutNoHp"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="32dp"
+        android:layout_height="@dimen/height_component"
         android:hint="No Hp"
         app:endIconMode="clear_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtNoHp"
@@ -50,10 +80,8 @@
         android:id="@+id/layoutTypeUser"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginStart="32dp"
+        android:layout_height="@dimen/height_component"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
         android:hint="Status Pengguna"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,10 +97,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layoutPassword"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginStart="32dp"
+        android:layout_height="@dimen/height_component"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
         android:hint="Password"
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,34 +117,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Lupa password?"
+        android:text="Lupa password ?"
         android:textColor="@color/blue_violet"
-        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/layoutPassword"
         app:layout_constraintTop_toBottomOf="@+id/layoutPassword" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnLogin"
-        android:layout_width="350dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="500dp"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_component"
+        android:layout_marginVertical="16dp"
         android:backgroundTint="@color/blue_violet"
         android:text="Masuk"
-        android:textSize="18sp"
         app:cornerRadius="18dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvCreateAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Belum punya akun? Daftar"
+        android:layout_marginRight="5dp"
+        android:text="Belum punya akun?"
         android:textColor="@color/blue_violet"
-        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_text_register"
+        app:layout_constraintTop_toTopOf="@+id/btn_text_register" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/btn_text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Daftar"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/btnLogin"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 

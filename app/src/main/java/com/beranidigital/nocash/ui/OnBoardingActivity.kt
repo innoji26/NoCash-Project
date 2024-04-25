@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.beranidigital.nocash.databinding.ActivityOnBoardingBinding
-import com.beranidigital.nocash.ui.otp.OtpActivity
+import com.beranidigital.nocash.ui.registrasi.RegistrasiActivity
 
 class OnBoardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnBoardingBinding
@@ -20,12 +20,11 @@ class OnBoardingActivity : AppCompatActivity() {
 
     private fun buttonListener(){
         binding.btnToLogin.setOnClickListener {
-            // TODO: navigate to login page
+            startActivity(Intent(this, LoginActivity::class.java))
         }
 
         binding.btnToRegis.setOnClickListener {
-            startActivity(Intent(this, NotifikasiActivity::class.java))
-            finish()
+            startActivity(Intent(this, RegistrasiActivity::class.java))
         }
     }
 }
