@@ -61,6 +61,7 @@ dependencies {
     //avatar
     implementation ("com.github.bumptech.glide:glide:4.15.1")
     implementation ("de.hdodenhof:circleimageview:3.1.0")
+
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
     implementation("androidx.activity:activity:1.8.0")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
