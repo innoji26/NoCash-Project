@@ -89,5 +89,7 @@
     <string name="history">Riwayat</string>
     <string name="invoice">Tagihan</string>
     <string name="profile">Profil</string>
+    <string name="step"> %1$d dari %2$d langkah </string>
+    <string name="title_pin">%1$s PIN Keamanan</string>
 
 </resources>

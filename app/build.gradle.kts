@@ -46,8 +46,10 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.fragment:fragment-ktx:1.7.1")
 
-    implementation("androidx.viewpager2:viewpager2:1.0.0")
+    //ViewPager
+    implementation("androidx.viewpager2:viewpager2:1.1.0")
 
     //API
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
@@ -55,25 +57,29 @@ dependencies {
     implementation ("com.squareup.okhttp3:logging-interceptor:4.9.0")
 
     //Camera
-    implementation ("androidx.camera:camera-camera2:1.4.0-alpha04")
-    implementation ("androidx.camera:camera-lifecycle:1.4.0-alpha04")
-    implementation ("androidx.camera:camera-view:1.4.0-alpha04")
+    implementation ("androidx.camera:camera-camera2:1.4.0-beta01")
+    implementation ("androidx.camera:camera-lifecycle:1.4.0-beta01")
+    implementation ("androidx.camera:camera-view:1.4.0-beta01")
 
     //avatar
     implementation ("com.github.bumptech.glide:glide:4.15.1")
     implementation ("de.hdodenhof:circleimageview:3.1.0")
+
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
-    implementation("androidx.activity:activity:1.8.0")
+    implementation("androidx.activity:activity:1.9.0")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
-    implementation("androidx.fragment:fragment-ktx:1.5.6")
-    implementation("com.google.firebase:firebase-auth:22.3.1")
-    implementation("com.google.firebase:firebase-storage:20.3.0")
-    implementation("com.google.firebase:firebase-database:20.3.1")
-    implementation("com.google.firebase:firebase-messaging:23.4.1")
-    implementation("com.google.firebase:firebase-inappmessaging-display:20.4.1")
+
+    //ViewModel
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.1")
+
+    //Firebase
+    implementation("com.google.firebase:firebase-auth:23.0.0")
+    implementation("com.google.firebase:firebase-storage:21.0.0")
+    implementation("com.google.firebase:firebase-database:21.0.0")
+    implementation("com.google.firebase:firebase-messaging:24.0.0")
+    implementation("com.google.firebase:firebase-inappmessaging-display:21.0.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
