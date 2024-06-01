@@ -6,16 +6,13 @@
         android:title="@string/home" />
 
     <item
-        android:id="@+id/historyFragment"
+        android:id="@+id/sellerFragment"
         android:icon="@drawable/selector_history"
         android:title="@string/history" />
 
-    <item android:id="@+id/invoiceFragment"
+    <item android:id="@+id/buyerFragment"
         android:icon="@drawable/selector_invoice"
         android:title="@string/invoice"
         />
 
-    <item android:id="@+id/profileFragment"
-        android:icon="@drawable/selector_profile"
-        android:title="@string/profile"/>
 </menu>
