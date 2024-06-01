@@ -13,7 +13,7 @@
         android:layout_width="350dp"
         android:layout_height="@dimen/height_component"
         android:layout_marginTop="500dp"
-        android:backgroundTint="@color/blue_violet"
+        android:backgroundTint="@color/blue"
         android:text="Masuk"
         app:cornerRadius="18dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,7 +108,7 @@
         android:padding="8dp"
         app:altSrc="@drawable/ic_circle_full_24"
         app:srcCompat="@drawable/ic_circle_24"
-        app:tint="@color/blue_violet" />
+        app:tint="@color/blue" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/menu2"
@@ -120,7 +120,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/btnToLogin"
         app:srcCompat="@drawable/ic_circle_24"
-        app:tint="@color/blue_violet" />
+        app:tint="@color/blue" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/menu3"
@@ -135,6 +135,6 @@
         app:layout_constraintTop_toTopOf="@+id/menu2"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_circle_24"
-        app:tint="@color/blue_violet" />
+        app:tint="@color/blue" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
