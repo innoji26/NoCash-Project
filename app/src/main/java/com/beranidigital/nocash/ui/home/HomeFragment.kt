@@ -1,12 +1,11 @@
 package com.beranidigital.nocash.ui.home
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
-import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.FragmentHomeBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -18,7 +17,6 @@ class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
     private lateinit var viewPager: ViewPager2
-    private lateinit var adapter: HomeTabMenuAdapter
     private lateinit var tabLayout : TabLayout
 
     private var param1: String? = null
@@ -59,16 +57,5 @@ class HomeFragment : Fragment() {
         }.attach()
 
 
-    }
-
-    companion object {
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
     }
 }
