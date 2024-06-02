@@ -11,7 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingHorizontal="20dp">
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="100dp"
+        >
 
 
         <!--    Appbar    -->
@@ -207,7 +209,6 @@
             tools:background="@color/blue_dark"
             />
 
-        <!--    Promo slider -->
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPagerHutanPiutang"
             android:layout_width="match_parent"
