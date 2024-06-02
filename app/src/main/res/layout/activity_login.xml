@@ -87,7 +87,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="none"
-                android:hint="@string/type_user"
                 app:simpleItems="@array/type_user" />
         </com.google.android.material.textfield.TextInputLayout>
 

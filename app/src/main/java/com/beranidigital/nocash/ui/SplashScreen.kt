@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import com.beranidigital.nocash.databinding.ActivitySplashScreenBinding
 import com.beranidigital.nocash.ui.main_navigation.MainHomeActivity
-
+import kotlinx.coroutines.*
 class SplashScreen : AppCompatActivity() {
     private lateinit var binding: ActivitySplashScreenBinding
     private val delayMs: Long = 5000
@@ -17,9 +17,14 @@ class SplashScreen : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
-        Handler().postDelayed({
+        CoroutineScope(Dispatchers.Main).launch {
+            delay(delayMs)
             setupSplashScreen()
-        }, delayMs)
+        }
+
+//        Handler().postDelayed({
+//            setupSplashScreen()
+//        }, delayMs)
     }
 
     private fun checkOnBoarding(): Boolean{

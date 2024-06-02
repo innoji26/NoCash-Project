@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
     app:layoutDescription="@xml/activity_on_boarding_scene"
     tools:context=".ui.OnBoardingActivity">
 
@@ -13,7 +12,7 @@
         android:layout_width="350dp"
         android:layout_height="@dimen/height_component"
         android:layout_marginTop="500dp"
-        android:backgroundTint="@color/blue_violet"
+        android:backgroundTint="#13F3BF"
         android:text="Masuk"
         app:cornerRadius="18dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,6 +25,8 @@
         android:layout_width="350dp"
         android:layout_height="@dimen/height_component"
         android:layout_marginTop="16dp"
+        app:strokeColor="#13F3BF"
+        app:strokeWidth="3dp"
         android:backgroundTint="@color/white"
         android:text="Belum punya akun? Daftar dulu"
         android:textColor="#515151"
@@ -83,21 +84,21 @@
         android:id="@+id/logoMenu1"
         android:layout_width="0dp"
         android:layout_height="300dp"
-        android:src="@drawable/slide_1"
+        android:src="@drawable/onboard1"
         tools:layout_editor_absoluteX="411dp" />
 
     <ImageView
         android:id="@+id/logoMenu2"
         android:layout_width="0dp"
         android:layout_height="300dp"
-        android:src="@drawable/slide_2"
+        android:src="@drawable/onboard2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/logoMenu3"
         android:layout_width="0dp"
         android:layout_height="300dp"
-        android:src="@drawable/slide_3"
+        android:src="@drawable/onboard3"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

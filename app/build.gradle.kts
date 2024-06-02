@@ -44,9 +44,10 @@ dependencies {
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.11.0")
+    implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.fragment:fragment-ktx:1.7.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
     //ViewPager
     implementation("androidx.viewpager2:viewpager2:1.1.0")
@@ -57,16 +58,16 @@ dependencies {
     implementation ("com.squareup.okhttp3:logging-interceptor:4.9.0")
 
     //Camera
-    implementation ("androidx.camera:camera-camera2:1.4.0-beta01")
-    implementation ("androidx.camera:camera-lifecycle:1.4.0-beta01")
-    implementation ("androidx.camera:camera-view:1.4.0-beta01")
+    implementation("androidx.camera:camera-camera2:1.4.0-alpha03")
+    implementation("androidx.camera:camera-lifecycle:1.4.0-alpha03")
+    implementation("androidx.camera:camera-view:1.4.0-alpha03")
 
     //avatar
     implementation ("com.github.bumptech.glide:glide:4.15.1")
     implementation ("de.hdodenhof:circleimageview:3.1.0")
 
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
-    implementation("androidx.activity:activity:1.9.0")
+    implementation("androidx.activity:activity-ktx:1.9.0")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
 
