@@ -82,7 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/continue_btn"
-        app:cornerRadius="8dp"
+        app:cornerRadius="?attr/cornerRadius"
         app:layout_constraintTop_toBottomOf="@+id/tv_timer"
         tools:layout_editor_absoluteX="30dp" />
 
