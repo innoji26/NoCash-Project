@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.ActivityRegistrasiBinding
+import com.beranidigital.nocash.ui.otp.OtpActivity
 import com.beranidigital.nocash.ui.pin.PinActivity
 import com.beranidigital.nocash.ui.pin.PinType
 
@@ -19,7 +20,6 @@ class RegistrasiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRegistrasiBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        spinnerStat()
 
         val toolbar = binding.toolbar
         setSupportActionBar(toolbar)
@@ -29,35 +29,11 @@ class RegistrasiActivity : AppCompatActivity() {
         }
 
         binding.btnTextLogin.setOnClickListener {
-            val intent = Intent(this, PinActivity::class.java)
-            intent.putExtra("type", PinType.CREATE)
+            val intent = Intent(this, OtpActivity::class.java)
+            intent.putExtra("type", "register") // set from OTP activity receive data type for switch OTP from register
             startActivity(intent)
         }
     }
 
-    private fun spinnerStat() {
-        val spinnerButton = binding.spinner
-        val itemStat = resources.getStringArray(R.array.User)
-        if (spinnerButton != null) {
-            val adapter = ArrayAdapter(this, R.layout.item_spinner, itemStat)
-            spinnerButton.adapter = adapter
-            spinnerButton.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-                override fun onItemSelected(
-                    p0: AdapterView<*>?,
-                    p1: View?,
-                    possition: Int,
-                    p3: Long,
-                ) {
-                    Toast.makeText(
-                        this@RegistrasiActivity,
-                        getString(R.string.selected_item) + "" + "" + itemStat[possition],
-                        Toast.LENGTH_LONG
-                    ).show()
-                }
 
-                override fun onNothingSelected(p0: AdapterView<*>?) {
-                }
-            }
-        }
-    }
 }
