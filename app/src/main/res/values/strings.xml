@@ -95,6 +95,11 @@
     <string name="save">Simpan</string>
     <string name="step"> %1$d dari %2$d langkah </string>
     <string name="title_pin">%1$s PIN Keamanan</string>
+    <string name="login">login</string>
+    <string name="Not_Have_Account">Belum punya akun? Daftar dulu</string>
+    <string name="_0_detik">0 detik</string>
+    <string name="forgotpassword">Lupa Password</string>
+    <string name="username">Username</string>
 
 
 </resources>

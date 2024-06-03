@@ -30,8 +30,6 @@
         </com.google.android.material.appbar.MaterialToolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
-
-
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
@@ -53,7 +51,8 @@
         android:src="@drawable/lnocas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:contentDescription="@string/image" />
 
     <EditText
         android:id="@+id/etPin"

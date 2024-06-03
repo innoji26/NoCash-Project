@@ -31,7 +31,6 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/shapeableImageView2"
-<<<<<<< HEAD
         android:layout_width="200dp"
         android:layout_height="150dp"
         android:layout_marginTop="32dp"
@@ -39,21 +38,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-=======
-        android:layout_width="match_parent"
-        android:layout_height="173dp"
-        android:src="@drawable/logo_nocash"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
->>>>>>> e45a33272f183c436894a3fbce10051d28625a45
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingVertical="16dp"
-        android:text="Masuk"
+        android:text="@string/login"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,7 +54,7 @@
         android:id="@+id/layoutNoHp"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_component"
-        android:hint="No Hp"
+        android:hint="@string/phone"
         app:endIconMode="clear_text"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6">
@@ -82,7 +72,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_component"
         android:layout_marginTop="16dp"
-        android:hint="Status Pengguna"
+        android:hint="@string/status_user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layoutNoHp">
@@ -99,7 +89,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_component"
         android:layout_marginTop="16dp"
-        android:hint="Password"
+        android:hint="@string/password"
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,10 +107,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Lupa password ?"
+        android:text="@string/forgotpassword"
         android:textColor="@color/blue_violet"
         app:layout_constraintEnd_toEndOf="@+id/layoutPassword"
-        app:layout_constraintTop_toBottomOf="@+id/layoutPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/layoutPassword"
+        tools:ignore="HardcodedText" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnLogin"
