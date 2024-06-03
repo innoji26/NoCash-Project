@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.FragmentHutangMenuBinding
 import com.beranidigital.nocash.models.HutangModel
 
@@ -35,12 +36,13 @@ class HutangMenuFragment : Fragment() {
             data.add(
                 HutangModel(
                     1,
-                    "Wawan Budiman",
+                    "Wahyu Budiman",
                     "Membeli gehu beli 5 gratis 1",
                     10,
                     10000,
                     "2021-10-10",
-                    "Belum Lunas"
+                    "Belum Lunas",
+                    R.drawable.ic_profile_border
                 ),
             )
         }

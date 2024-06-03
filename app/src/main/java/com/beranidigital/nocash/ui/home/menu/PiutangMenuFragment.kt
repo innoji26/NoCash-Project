@@ -41,7 +41,8 @@ class PiutangMenuFragment : Fragment() {
                     10,
                     10000,
                     "2021-10-10",
-                    "Belum Lunas"
+                    "Belum Lunas",
+                    R.drawable.ic_market
                 ),
             )
         }
