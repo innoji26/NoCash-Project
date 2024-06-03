@@ -2,8 +2,10 @@ package com.beranidigital.nocash.ui.home.menu
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.HutangItemBinding
 import com.beranidigital.nocash.models.HutangModel
 
@@ -25,6 +27,7 @@ class HutangRecyclerViewAdapter(
         holder.title.text = item.name
         holder.description.text = item.description
         holder.amount.text = "Rp. ${item.amount}"
+        holder.image.setImageResource(item.image!!)
     }
 
     override fun getItemCount(): Int = values.size
@@ -33,7 +36,7 @@ class HutangRecyclerViewAdapter(
         val title: TextView = binding.titleItem
         val description: TextView = binding.descriptionItem
         val amount : TextView = binding.amountItem
-
+        val image: ImageView = binding.iconItem
     }
 
 }
