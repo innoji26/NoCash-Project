@@ -21,11 +21,11 @@
         android:theme="@style/Theme.NoCash"
         tools:targetApi="31">
         <activity
-            android:name=".ui.complete_register.CompleteRegiterActivity"
+            android:name=".ui.profile.ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".ui.main_navigation.MainHomeActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".ui.CameraActivity"
             android:exported="false" />
@@ -46,9 +46,6 @@
             android:exported="false" />
         <activity
             android:name=".ui.registrasi.RegistrasiActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.pin.PinActivity"
             android:exported="false" />
         <activity
             android:name=".ui.otp.OtpActivity"
