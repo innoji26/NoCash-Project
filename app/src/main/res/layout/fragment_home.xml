@@ -214,6 +214,16 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             tools:background="@color/grey" />
+
+        <!--    Promo    -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPromo"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginVertical="20dp"
+            android:orientation="horizontal"
+            tools:listitem="@layout/item_promo"
+            />
     </LinearLayout>
 
 
