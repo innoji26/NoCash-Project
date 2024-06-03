@@ -7,8 +7,6 @@ import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.ActivityOtpBinding
 import com.beranidigital.nocash.ui.ScanKtpActivity
 import com.beranidigital.nocash.ui.main_navigation.MainHomeActivity
-import com.beranidigital.nocash.ui.pin.PinActivity
-import com.beranidigital.nocash.ui.pin.PinType
 import com.google.android.material.snackbar.Snackbar
 
 class OtpActivity: AppCompatActivity() {
