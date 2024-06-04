@@ -8,7 +8,8 @@ data class TransactionModel(
     val shopId: String,
     val type: String,
     val amount: Int,
-    val date: String,
+    val createdAt: String,
+    val updatedAt: String,
     val status: String,
     val imageTransaction: String
 )
