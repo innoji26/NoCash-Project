@@ -42,7 +42,7 @@ class HutangMenuFragment : Fragment() {
                     10000,
                     "2021-10-10",
                     "Belum Lunas",
-                    R.drawable.ic_profile_border
+                    R.drawable.ic_market
                 ),
             )
         }
