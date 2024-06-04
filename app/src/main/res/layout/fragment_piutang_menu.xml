@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
         tools:itemCount="10"
-        tools:listitem="@layout/hutang_item"
+        tools:listitem="@layout/item_hutang"
         />
 
 </LinearLayout>

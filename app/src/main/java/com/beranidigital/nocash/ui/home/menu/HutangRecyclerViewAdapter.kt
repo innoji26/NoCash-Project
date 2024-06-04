@@ -6,7 +6,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.beranidigital.nocash.R
-import com.beranidigital.nocash.databinding.HutangItemBinding
+import com.beranidigital.nocash.databinding.ItemHutangBinding
 import com.beranidigital.nocash.models.HutangModel
 
 
@@ -14,10 +14,10 @@ class HutangRecyclerViewAdapter(
     private val values: List<HutangModel>
 ) : RecyclerView.Adapter<HutangRecyclerViewAdapter.ViewHolder>() {
 
-    private lateinit var binding: HutangItemBinding
+    private lateinit var binding: ItemHutangBinding
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        binding = HutangItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        binding = ItemHutangBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
 
     }
@@ -32,7 +32,7 @@ class HutangRecyclerViewAdapter(
 
     override fun getItemCount(): Int = values.size
 
-    class ViewHolder(binding: HutangItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    class ViewHolder(binding: ItemHutangBinding) : RecyclerView.ViewHolder(binding.root) {
         val title: TextView = binding.titleItem
         val description: TextView = binding.descriptionItem
         val amount : TextView = binding.amountItem

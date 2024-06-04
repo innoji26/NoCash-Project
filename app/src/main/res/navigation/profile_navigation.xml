@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_navigation"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.beranidigital.nocash.ui.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_contactUsFragment"
+            app:destination="@id/contactUsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_termConditionFragment"
+            app:destination="@id/termConditionFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.beranidigital.nocash.ui.profile.informations.ContactUsFragment"
+        android:label="Kontak Kami"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/termConditionFragment"
+        android:name="com.beranidigital.nocash.ui.profile.informations.TermConditionFragment"
+        android:label="Syarat dan Ketentuan"
+        tools:layout="@layout/fragment_term_condition" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.beranidigital.nocash.ui.profile.informations.PrivacyPolicyFragment"
+        android:label="Kebijakan Privasi"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.beranidigital.nocash.ui.profile.informations.AboutUsFragment"
+        android:label="Tentang Kami"
+        tools:layout="@layout/fragment_about_us" />
+</navigation>
