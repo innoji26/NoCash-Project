@@ -1,15 +1,20 @@
 package com.beranidigital.nocash.ui.profile
 
+import android.app.Dialog
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
+import android.widget.Button
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.FragmentProfileBinding
+import com.beranidigital.nocash.ui.LoginActivity
 
 class ProfileFragment : Fragment() {
 
@@ -29,6 +34,14 @@ class ProfileFragment : Fragment() {
 
         initNavHost()
 
+        binding.toolbar.setNavigationOnClickListener {
+            requireActivity().onBackPressed()
+        }
+
+        binding.btnEdit.setOnClickListener {
+            // TODO: navigate to edit user data profile
+        }
+
         binding.contactUs.setOnClickListener {
             navController.navigate(R.id.action_profileFragment_to_contactUsFragment)
         }
@@ -43,6 +56,28 @@ class ProfileFragment : Fragment() {
 
         binding.aboutUs.setOnClickListener {
             navController.navigate(R.id.action_profileFragment_to_aboutUsFragment)
+        }
+
+        dialogLogout()
+    }
+
+    private fun dialogLogout(){
+        binding.buttonLogout.setOnClickListener {
+            val dialog = Dialog(requireContext())
+            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+            dialog.setCancelable(false)
+            dialog.setContentView(R.layout.dialog_logout)
+
+            dialog.findViewById<Button>(R.id.btnCancel).setOnClickListener {
+                dialog.dismiss()
+            }
+            dialog.findViewById<Button>(R.id.btnLogout).setOnClickListener {
+                dialog.dismiss()
+                val newIntent = Intent(requireContext(), LoginActivity::class.java)
+                newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                startActivity(newIntent)
+            }
+            dialog.show()
         }
     }
 
