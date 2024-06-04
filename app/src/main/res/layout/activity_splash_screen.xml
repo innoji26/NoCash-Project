@@ -9,7 +9,7 @@
     <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="187dp"
         android:layout_height="187dp"
-        android:src="@drawable/logo_nocash1"
+        android:src="@drawable/logo_app"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
