@@ -100,6 +100,9 @@
     <string name="_0_detik">0 detik</string>
     <string name="forgotpassword">Lupa Password</string>
     <string name="username">Username</string>
+    <string name="agree_privacy_policy">Saya setuju dengan</string>
+    <string name="term_and_conditions"> Syarat dan ketentuan\n</string>
+    <string name="privacy">Kebijakan privasi</string>
 
 
 </resources>
