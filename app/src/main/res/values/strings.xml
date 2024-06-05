@@ -81,7 +81,10 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="home">Beranda</string>
     <string name="history">Riwayat</string>
     <string name="invoice">Tagihan</string>
@@ -95,6 +98,7 @@
     <string name="save">Simpan</string>
     <string name="step"> %1$d dari %2$d langkah </string>
     <string name="title_pin">%1$s PIN Keamanan</string>
+<<<<<<< HEAD
     <string name="login">login</string>
     <string name="Not_Have_Account">Belum punya akun? Daftar dulu</string>
     <string name="_0_detik">0 detik</string>
@@ -104,5 +108,51 @@
     <string name="term_and_conditions"> Syarat dan ketentuan\n</string>
     <string name="privacy">Kebijakan privasi</string>
 
+=======
+    <string name="contact_us">
+        Kami di Nocash selalu siap membantu Anda. Jika Anda memiliki pertanyaan, saran, atau 
+        membutuhkan bantuan, jangan ragu untuk menghubungi kami melalui salah satu cara di bawah ini:\n
+        Email : support@nocash.com\n\n
+        Tim dukungan kami siap menjawab pertanyaan Anda dan memberikan solusi yang Anda butuhkan. 
+        Alamat Nocash Indonesia : Jl. Contoh No. 123, Jakarta, Indonesia\n\n
+        Media Sosial Ikuti kami di media sosial untuk mendapatkan update terbaru, tips, dan dukungan:\n
+        Facebook: facebook.com/nocash\n
+        Twitter: twitter.com/nocash\n
+        Instagram: instagram.com/nocash\n\n
+        Formulir Kontak Anda juga bisa menghubungi kami melalui formulir kontak di aplikasi Nocash. 
+        Buka aplikasi, pergi ke bagian Kontak Kami dan isi formulir dengan detail pertanyaan atau 
+        masalah Anda. Tim kami akan segera menghubungi Anda. Kami berkomitmen untuk memberikan layanan 
+        terbaik dan memastikan pengalaman Anda dengan Nocash selalu memuaskan. Jangan ragu untuk 
+        menghubungi kami kapan saja. Terima kasih telah memilih Nocash!\n\n
+        Nocash - Solusi Cerdas untuk Hutang Piutang Anda.
+    </string>
+>>>>>>> 9401669b05d54c9b17b807dec5af2000cec3d824
 
+    <string name="termCondition">
+        Syarat dan Ketentuan Penggunaan Aplikasi Nocash
+        Selamat datang di Nocash, aplikasi pencatatan hutang piutang yang memudahkan penjual dan
+        pembeli dalam mengelola transaksi. Dengan menggunakan aplikasi Nocash, Anda setuju untuk
+        mematuhi syarat dan ketentuan berikut ini:
+    </string>
+
+    <string name="privacyPolicy">
+        Kebijakan Privasi Aplikasi Nocash\n\n
+        Kami di Nocash menghargai privasi Anda dan berkomitmen untuk melindungi informasi pribadi
+        Anda. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, menyimpan,
+        dan melindungi data Anda saat menggunakan aplikasi Nocash.\n
+    </string>
+    <string name="closing_termcondition">Dengan mendaftar dan menggunakan aplikasi Nocash, Anda menyetujui semua syarat dan ketentuan yang disebutkan di atas. Jika Anda memiliki pertanyaan atau memerlukan bantuan, silakan hubungi layanan pelanggan kami.</string>
+    <string name="welcome_to_nocash">Selamat menggunakan Nocash!</string>
+    <string name="closing_privacypolicy">Dengan menggunakan aplikasi Nocash, Anda menyetujui pengumpulan dan penggunaan informasi sesuai dengan Kebijakan Privasi ini. Kami berkomitmen untuk melindungi privasi Anda dan memastikan bahwa informasi pribadi Anda aman dengan kami.</string>
+    <string name="jargon_nocash">Nocash - Solusi Cerdas untuk Hutang Piutang Anda.</string>
+    <string name="welcome">Selamat datang di NoCash!</string>
+    <string name="nocash_adalah">Nocash adalah aplikasi pencatatan hutang piutang yang dirancang untuk memudahkan penjual dan pembeli dalam mengelola transaksi keuangan. Kami memahami bahwa dalam dunia bisnis dan kehidupan sehari-hari, mencatat hutang piutang bisa menjadi tugas yang menantang. Oleh karena itu, Nocash hadir sebagai solusi pintar yang membantu Anda mengelola dan melacak hutang piutang dengan lebih efisien, aman, dan mudah.</string>
+    <string name="misi_nocash">Misi kami adalah memberikan alat yang intuitif dan efektif untuk membantu individu dan bisnis dalam mengelola transaksi hutang piutang. Kami berkomitmen untuk memberdayakan pengguna dengan fitur-fitur yang membuat pencatatan dan pengelolaan keuangan menjadi lebih sederhana dan transparan.</string>
+    <string name="komitmen_nocash">Kami berkomitmen untuk terus berinovasi dan meningkatkan aplikasi Nocash sesuai dengan kebutuhan pengguna. Tim kami berdedikasi untuk memberikan layanan terbaik dan selalu siap mendengar masukan serta saran dari pengguna demi kesempurnaan aplikasi kami.</string>
+    <string name="hubungi_kami">Kami selalu siap membantu dan menjawab pertanyaan Anda. Jika Anda memiliki pertanyaan, saran, atau membutuhkan bantuan, jangan ragu untuk menghubungi kami:\n
+        Email: support@nocash.com\n
+        Alamat: Jl. Contoh No. 123, Jakarta, Indonesia
+    </string>
+    <string name="closing_about_us">Terima kasih telah memilih Nocash sebagai partner terpercaya dalam mengelola hutang piutang Anda. Kami berharap dapat terus mendukung Anda dalam mencapai kesuksesan finansial dan bisnis yang lebih baik.</string>
+    <string name="confirm_logout">Apakah anda yakin ingin keluar akun?</string>
 </resources>

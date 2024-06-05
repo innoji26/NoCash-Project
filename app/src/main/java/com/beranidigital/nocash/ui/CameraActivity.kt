@@ -9,6 +9,7 @@ import androidx.camera.core.ImageCapture
 import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
+import androidx.camera.lifecycle.ProcessCameraProvider.*
 import androidx.core.content.ContextCompat
 import com.beranidigital.nocash.databinding.ActivityCameraBinding
 import com.beranidigital.nocash.util.createFile
@@ -29,7 +30,7 @@ class CameraActivity : AppCompatActivity() {
 
     private fun buttonListener(){
         binding.switchCamera.setOnClickListener {
-            cameraSelector = if (cameraSelector.equals(CameraSelector.DEFAULT_BACK_CAMERA)) CameraSelector.DEFAULT_FRONT_CAMERA
+            cameraSelector = if (cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA) CameraSelector.DEFAULT_FRONT_CAMERA
             else CameraSelector.DEFAULT_BACK_CAMERA
 
             startCamera()
@@ -41,7 +42,7 @@ class CameraActivity : AppCompatActivity() {
     }
 
     private fun startCamera(){
-        val cameraProviderFuture = ProcessCameraProvider.getInstance(this)
+        val cameraProviderFuture = getInstance(this)
 
         cameraProviderFuture.addListener({
             val cameraProvider: ProcessCameraProvider = cameraProviderFuture.get()

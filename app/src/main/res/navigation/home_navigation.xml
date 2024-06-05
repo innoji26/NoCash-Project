@@ -10,18 +10,13 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_invoice" />
     <fragment
-        android:id="@+id/historyFragment"
+        android:id="@+id/sellerFragment"
         android:name="com.beranidigital.nocash.ui.history.HistoryFragment"
         android:label="fragment_history"
-        tools:layout="@layout/fragment_history" />
+        tools:layout="@layout/fragment_seller" />
     <fragment
-        android:id="@+id/invoiceFragment"
+        android:id="@+id/buyerFragment"
         android:name="com.beranidigital.nocash.ui.invoice.InvoiceFragment"
         android:label="fragment_invoice"
-        tools:layout="@layout/fragment_invoice" />
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.beranidigital.nocash.ui.profile.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_buyer" />
 </navigation>

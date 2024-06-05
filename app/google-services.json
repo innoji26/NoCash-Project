@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "410114690941",
+    "firebase_url": "https://nocash-7b3ff-default-rtdb.firebaseio.com",
+    "project_id": "nocash-7b3ff",
+    "storage_bucket": "nocash-7b3ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410114690941:android:9fe82ddfe7cb514ba80614",
+        "android_client_info": {
+          "package_name": "com.beranidigital.nocash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410114690941-kdciihh5r9njr0l7ctdu73a75d95vvbt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2LTPhozsy9ySUtK7NiLUyt6EeeGKyPaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410114690941-kdciihh5r9njr0l7ctdu73a75d95vvbt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

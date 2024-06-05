@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.NoCash" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="colorPrimary">@color/blue_violet</item>
+        <item name="colorPrimary">@color/blue</item>
         <item name="colorSurface">@color/white</item>
         <item name="backgroundColor">@color/white</item>
         <item name="android:windowBackground">@color/white</item>
@@ -12,4 +12,12 @@
     </style>
 
     <style name="Theme.NoCash" parent="Base.Theme.NoCash" />
+
+    <style name="OutlinedButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:paddingLeft">@dimen/mtrl_btn_padding_left</item>
+        <item name="android:paddingRight">@dimen/mtrl_btn_padding_right</item>
+        <item name="strokeColor">@color/blue</item>
+        <item name="strokeWidth">4dp</item>
+    </style>
+
 </resources>
