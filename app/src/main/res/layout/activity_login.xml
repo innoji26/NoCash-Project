@@ -31,6 +31,7 @@
 
             </com.google.android.material.appbar.MaterialToolbar>
 
+
         </com.google.android.material.appbar.AppBarLayout>
 
 
@@ -46,16 +47,19 @@
             app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
 
 
+
+
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/layoutNoHp"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_component"
             android:hint="No Hp"
             app:endIconMode="clear_text"
-
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView6">
+
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtNoHp"

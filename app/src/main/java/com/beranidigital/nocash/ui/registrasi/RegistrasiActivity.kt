@@ -13,6 +13,10 @@ class RegistrasiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRegistrasiBinding.inflate(layoutInflater)
         setContentView(binding.root)
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9401669b05d54c9b17b807dec5af2000cec3d824
 
         val toolbar = binding.toolbar
         setSupportActionBar(toolbar)
@@ -28,5 +32,33 @@ class RegistrasiActivity : AppCompatActivity() {
         }
     }
 
+<<<<<<< HEAD
+//    private fun spinnerStat() {
+//        val spinnerButton = binding.spinner
+//        val itemStat = resources.getStringArray(R.array.User)
+//        if (spinnerButton != null) {
+//            val adapter = ArrayAdapter(this, R.layout.item_spinner, itemStat)
+//            spinnerButton.adapter = adapter
+//            spinnerButton.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+//                override fun onItemSelected(
+//                    p0: AdapterView<*>?,
+//                    p1: View?,
+//                    possition: Int,
+//                    p3: Long,
+//                ) {
+//                    Toast.makeText(
+//                        this@RegistrasiActivity,
+//                        getString(R.string.selected_item) + "" + "" + itemStat[possition],
+//                        Toast.LENGTH_LONG
+//                    ).show()
+//                }
+//
+//                override fun onNothingSelected(p0: AdapterView<*>?) {
+//                }
+//            }
+//        }
+//    }
+=======
 
+>>>>>>> 9401669b05d54c9b17b807dec5af2000cec3d824
 }
