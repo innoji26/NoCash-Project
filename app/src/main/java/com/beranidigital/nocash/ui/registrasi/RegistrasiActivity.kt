@@ -19,7 +19,7 @@ class RegistrasiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRegistrasiBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        spinnerStat()
+
 
         val toolbar = binding.toolbar
         setSupportActionBar(toolbar)
@@ -35,29 +35,29 @@ class RegistrasiActivity : AppCompatActivity() {
         }
     }
 
-    private fun spinnerStat() {
-        val spinnerButton = binding.spinner
-        val itemStat = resources.getStringArray(R.array.User)
-        if (spinnerButton != null) {
-            val adapter = ArrayAdapter(this, R.layout.item_spinner, itemStat)
-            spinnerButton.adapter = adapter
-            spinnerButton.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-                override fun onItemSelected(
-                    p0: AdapterView<*>?,
-                    p1: View?,
-                    possition: Int,
-                    p3: Long,
-                ) {
-                    Toast.makeText(
-                        this@RegistrasiActivity,
-                        getString(R.string.selected_item) + "" + "" + itemStat[possition],
-                        Toast.LENGTH_LONG
-                    ).show()
-                }
-
-                override fun onNothingSelected(p0: AdapterView<*>?) {
-                }
-            }
-        }
-    }
+//    private fun spinnerStat() {
+//        val spinnerButton = binding.spinner
+//        val itemStat = resources.getStringArray(R.array.User)
+//        if (spinnerButton != null) {
+//            val adapter = ArrayAdapter(this, R.layout.item_spinner, itemStat)
+//            spinnerButton.adapter = adapter
+//            spinnerButton.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+//                override fun onItemSelected(
+//                    p0: AdapterView<*>?,
+//                    p1: View?,
+//                    possition: Int,
+//                    p3: Long,
+//                ) {
+//                    Toast.makeText(
+//                        this@RegistrasiActivity,
+//                        getString(R.string.selected_item) + "" + "" + itemStat[possition],
+//                        Toast.LENGTH_LONG
+//                    ).show()
+//                }
+//
+//                override fun onNothingSelected(p0: AdapterView<*>?) {
+//                }
+//            }
+//        }
+//    }
 }
