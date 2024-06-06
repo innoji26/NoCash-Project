@@ -14,7 +14,7 @@ class MainHomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainHomeBinding
     private lateinit var navController: NavController
-    private lateinit var bottomNavigation : CurvedBottomNavigationView
+    private lateinit var bottomNavigation: CurvedBottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,9 +38,9 @@ class MainHomeActivity : AppCompatActivity() {
     private fun MainHomeActivity.setUpBottomNavigation() {
         val bottomNavigationItems = arrayOf(
             CbnMenuItem(
-                R.drawable.ic_seller_title,
-                 R.drawable.avd_seller,
-                 destinationId = R.id.sellerFragment,
+                R.drawable.ic_buyer_title,
+                R.drawable.avd_buyer,
+                R.id.buyerFragment,
             ),
             CbnMenuItem(
                 R.drawable.ic_home_title,
@@ -48,9 +48,9 @@ class MainHomeActivity : AppCompatActivity() {
                 R.id.homeFragment,
             ),
             CbnMenuItem(
-                R.drawable.ic_buyer_title,
-                R.drawable.avd_buyer,
-                R.id.buyerFragment,
+                R.drawable.ic_seller_title,
+                R.drawable.avd_seller,
+                R.id.sellerFragment,
             )
         )
 

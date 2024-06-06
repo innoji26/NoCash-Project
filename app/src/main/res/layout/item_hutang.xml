@@ -10,7 +10,7 @@
     android:backgroundTint="@color/alice_blue"
     android:gravity="center"
     android:orientation="horizontal"
-    android:padding="1dp">
+    android:padding="5dp">
 
     <LinearLayout
         android:id="@+id/itemContainer"

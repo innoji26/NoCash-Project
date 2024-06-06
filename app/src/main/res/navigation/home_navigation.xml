@@ -6,17 +6,17 @@
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.beranidigital.nocash.ui.invoice.InvoiceFragment"
+        android:name="com.beranidigital.nocash.ui.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_invoice" />
+        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/sellerFragment"
-        android:name="com.beranidigital.nocash.ui.history.HistoryFragment"
+        android:name="com.beranidigital.nocash.ui.seller.SellerFragment"
         android:label="fragment_history"
         tools:layout="@layout/fragment_seller" />
     <fragment
         android:id="@+id/buyerFragment"
-        android:name="com.beranidigital.nocash.ui.invoice.InvoiceFragment"
+        android:name="com.beranidigital.nocash.ui.buyer.BuyerFragment"
         android:label="fragment_invoice"
         tools:layout="@layout/fragment_buyer" />
 </navigation>

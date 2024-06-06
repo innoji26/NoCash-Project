@@ -6,12 +6,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp"
+    android:scrollbars="none"
     tools:context=".ui.identitas.DataIdentitasActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingHorizontal="15dp"
+        android:paddingBottom="30dp"
+        >
 
         <TextView
             android:id="@+id/textView6"
@@ -37,7 +41,7 @@
             android:id="@+id/layoutNoHp"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:hint="@string/phone"
             app:endIconMode="clear_text"
             app:layout_constraintStart_toStartOf="parent"
@@ -195,7 +199,7 @@
             android:text="@string/save"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkboxPrivacyPolicy" />
+            app:layout_constraintTop_toBottomOf="@+id/privacy" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

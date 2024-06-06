@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.ActivityScanKtpBinding
+import com.beranidigital.nocash.ui.identitas.DataIdentitasActivity
 import com.beranidigital.nocash.ui.main_navigation.MainHomeActivity
 
 class ScanKtpActivity : AppCompatActivity() {
@@ -18,8 +19,7 @@ class ScanKtpActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         binding.btnSave.setOnClickListener {
-            val newIntent = Intent(this, MainHomeActivity::class.java)
-            newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            val newIntent = Intent(this, DataIdentitasActivity::class.java)
             startActivity(newIntent)
         }
     }
