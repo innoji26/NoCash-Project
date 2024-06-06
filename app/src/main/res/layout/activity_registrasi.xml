@@ -6,14 +6,16 @@
     android:layout_height="match_parent"
     android:paddingHorizontal="30dp"
     android:scrollbars="none"
-    android:overScrollMode="never"
-    >
+    android:overScrollMode="never">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".ui.registrasi.RegistrasiActivity">
+        android:padding="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBarLayout"
@@ -34,6 +36,7 @@
                 app:navigationIcon="@drawable/ic_arrow_back">
 
             </com.google.android.material.appbar.MaterialToolbar>
+
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -60,6 +63,40 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/phone"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUsername"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnTextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:backgroundTint="@color/blue_violet"
+        android:text="@string/registration"
+        app:layout_constraintTop_toBottomOf="@+id/textPhone"
+        tools:layout_editor_absoluteX="10dp" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textUsername"
             android:layout_width="match_parent"
@@ -80,6 +117,7 @@
                 android:nextFocusDown="@+id/textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
+\
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textHp"
@@ -106,7 +144,7 @@
 
 
         <Button
-            android:id="@+id/btnTextLogin"
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="16dp"

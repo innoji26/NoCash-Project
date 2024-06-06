@@ -43,6 +43,7 @@
         android:id="@+id/tv_number_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tv_description"
         app:layout_constraintTop_toBottomOf="@+id/tv_description"
         tools:text="@string/send_code_to_number" />
@@ -64,7 +65,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@+id/et_otp"
         app:layout_constraintTop_toBottomOf="@+id/et_otp"
-        android:text="0 detik" />
+        android:text="@string/_0_detik" />
 
 
     <TextView

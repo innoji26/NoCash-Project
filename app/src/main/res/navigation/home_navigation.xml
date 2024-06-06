@@ -6,9 +6,9 @@
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.beranidigital.nocash.ui.home.HomeFragment"
+        android:name="com.beranidigital.nocash.ui.invoice.InvoiceFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_invoice" />
     <fragment
         android:id="@+id/sellerFragment"
         android:name="com.beranidigital.nocash.ui.history.HistoryFragment"

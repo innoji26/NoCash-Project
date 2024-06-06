@@ -89,8 +89,26 @@
     <string name="history">Riwayat</string>
     <string name="invoice">Tagihan</string>
     <string name="profile">Profil</string>
+    <string name="textup2">2 dari 3 Langkah</string>
+    <string name="personaldata">Lakukan Pengisian Formulir Data Diri Anda</string>
+    <string name="dateborn">Tanggal Lahir</string>
+    <string name="live">Alamat</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="save">Simpan</string>
     <string name="step"> %1$d dari %2$d langkah </string>
     <string name="title_pin">%1$s PIN Keamanan</string>
+<<<<<<< HEAD
+    <string name="login">login</string>
+    <string name="Not_Have_Account">Belum punya akun? Daftar dulu</string>
+    <string name="_0_detik">0 detik</string>
+    <string name="forgotpassword">Lupa Password</string>
+    <string name="username">Username</string>
+    <string name="agree_privacy_policy">Saya setuju dengan</string>
+    <string name="term_and_conditions"> Syarat dan ketentuan\n</string>
+    <string name="privacy">Kebijakan privasi</string>
+
+=======
     <string name="contact_us">
         Kami di Nocash selalu siap membantu Anda. Jika Anda memiliki pertanyaan, saran, atau 
         membutuhkan bantuan, jangan ragu untuk menghubungi kami melalui salah satu cara di bawah ini:\n
@@ -108,6 +126,7 @@
         menghubungi kami kapan saja. Terima kasih telah memilih Nocash!\n\n
         Nocash - Solusi Cerdas untuk Hutang Piutang Anda.
     </string>
+>>>>>>> 9401669b05d54c9b17b807dec5af2000cec3d824
 
     <string name="termCondition">
         Syarat dan Ketentuan Penggunaan Aplikasi Nocash
