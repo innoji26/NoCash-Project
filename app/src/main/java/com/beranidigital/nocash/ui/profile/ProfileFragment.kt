@@ -11,10 +11,9 @@ import android.view.Window
 import android.widget.Button
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
 import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.FragmentProfileBinding
-import com.beranidigital.nocash.ui.LoginActivity
+import com.beranidigital.nocash.ui.login.LoginActivity
 
 class ProfileFragment : Fragment() {
 

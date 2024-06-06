@@ -1,4 +1,4 @@
-package com.beranidigital.nocash.ui
+package com.beranidigital.nocash.ui.login
 
 import android.content.Intent
 import android.graphics.Paint
@@ -28,6 +28,5 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, RegistrasiActivity::class.java))
         }
 
-        binding.forgotPassword.paintFlags = Paint.UNDERLINE_TEXT_FLAG
     }
 }

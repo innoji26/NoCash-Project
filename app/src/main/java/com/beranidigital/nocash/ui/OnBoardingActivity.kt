@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.beranidigital.nocash.databinding.ActivityOnBoardingBinding
-import com.beranidigital.nocash.ui.otp.OtpActivity
+import com.beranidigital.nocash.ui.login.LoginActivity
 import com.beranidigital.nocash.ui.registrasi.RegistrasiActivity
 
 class OnBoardingActivity : AppCompatActivity() {
