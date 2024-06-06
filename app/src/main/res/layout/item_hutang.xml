@@ -4,62 +4,118 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="12dp"
-    android:layout_marginBottom="10dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginHorizontal="10dp"
     android:background="@drawable/corner_shape"
-    android:backgroundTint="@color/alice_blue">
+    android:backgroundTint="@color/alice_blue"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="1dp">
 
-    <ImageView
-        android:id="@+id/iconItem"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        tools:src="@drawable/ic_market"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:id="@+id/itemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/iconItem"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_market" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@id/descriptionItem"
+                app:layout_constraintStart_toEndOf="@+id/iconItem"
+                app:layout_constraintTop_toTopOf="@+id/iconItem"
+                tools:text="Toko Segala ada" />
+
+            <TextView
+                android:id="@+id/descriptionItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iconItem"
+                app:layout_constraintStart_toEndOf="@+id/iconItem"
+                app:layout_constraintTop_toBottomOf="@+id/titleItem"
+                tools:text="Meja Belajar gahar tipe A" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/statusItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jatuh tempo 5 Hari lagi"
+                android:textColor="?attr/colorError"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/titleItem" />
+
+            <TextView
+                android:id="@+id/amountItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 95.000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/statusItem" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/titleItem"
-        android:layout_width="wrap_content"
+        android:id="@+id/progressTextItem"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@id/descriptionItem"
-        app:layout_constraintStart_toEndOf="@+id/iconItem"
-        app:layout_constraintTop_toTopOf="@+id/iconItem"
-        tools:text="Toko Segala ada" />
-
-    <TextView
-        android:id="@+id/descriptionItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="3dp"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/iconItem"
-        app:layout_constraintStart_toEndOf="@+id/iconItem"
-        app:layout_constraintTop_toBottomOf="@+id/titleItem"
-        tools:text="Meja Belajar gahar tipe A" />
-
-    <TextView
-        android:id="@+id/statusItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jatuh tempo 5 Hari lagi"
-        android:textColor="?attr/colorError"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/titleItem" />
-
-    <TextView
-        android:id="@+id/amountItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rp 95.000"
-        android:textSize="20sp"
+        android:textColor="?attr/colorPrimary"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/progressItem"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/statusItem" />
+        app:layout_constraintTop_toBottomOf="@id/itemContainer"
+        app:layout_constraintTop_toTopOf="@id/progressItem"
+        tools:text="50%" />
+
+    <ProgressBar
+        android:id="@+id/progressItem"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"
+        android:progressBackgroundTint="#D9D9D9"
+        android:progressTint="?attr/colorPrimary"
+        app:cornerRadius="?attr/cornerRadius"
+        app:layout_constraintEnd_toStartOf="@id/progressTextItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemContainer"
+        tools:progress="50" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

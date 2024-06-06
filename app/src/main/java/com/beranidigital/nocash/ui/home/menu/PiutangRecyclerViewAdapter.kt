@@ -3,6 +3,7 @@ package com.beranidigital.nocash.ui.home.menu
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.beranidigital.nocash.R
@@ -28,6 +29,8 @@ class PiutangRecyclerViewAdapter(
         holder.description.text = item.description
         holder.amount.text = "Rp. ${item.amount}"
         holder.image.setImageResource(item.image!!)
+        holder.progressBar.progress = item.percentase
+        holder.progressBarText.text = "${item.percentase}%"
     }
 
     override fun getItemCount(): Int = values.size
@@ -37,6 +40,8 @@ class PiutangRecyclerViewAdapter(
         val description: TextView = binding.descriptionItem
         val amount : TextView = binding.amountItem
         val image : ImageView = binding.iconItem
+        val progressBar: ProgressBar = binding.progressItem
+        val progressBarText: TextView = binding.progressTextItem
 
     }
 

@@ -38,7 +38,7 @@ class HutangMenuFragment : Fragment() {
                     1,
                     "Wahyu Budiman",
                     "Membeli gehu beli 5 gratis 1",
-                    10,
+                    10 + (10 * i),
                     10000,
                     "2021-10-10",
                     "Belum Lunas",
