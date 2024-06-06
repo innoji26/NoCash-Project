@@ -88,7 +88,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btnTextLogin"
+        android:id="@+id/btnTextRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="16dp"
@@ -144,7 +144,7 @@
 
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="16dp"
@@ -155,13 +155,24 @@
             tools:layout_editor_absoluteX="10dp" />
 
         <TextView
+            android:id="@+id/tvQuestionLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
             android:text="@string/have_account"
             android:textColor="@color/blue"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnTextLogin" />
+            app:layout_constraintEnd_toStartOf="@+id/tvLogin"
+            app:layout_constraintTop_toBottomOf="@+id/btnTextRegister" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
