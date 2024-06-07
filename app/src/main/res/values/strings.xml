@@ -20,6 +20,10 @@
         <item>Penjual</item>
         <item>Pembeli</item>
     </string-array>
+    <string-array name="gender">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
 
     <string name="tips_scan_ktp">Foto Kartu Identitas Anda berupa KTP atau SIM dengan klik tombol \'Ambil Foto\', Pastikan kartu identitas Anda sudah jelas</string>
     <string-array name="type_user">

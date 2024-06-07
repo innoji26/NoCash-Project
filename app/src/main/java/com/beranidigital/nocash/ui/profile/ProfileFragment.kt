@@ -38,7 +38,7 @@ class ProfileFragment : Fragment() {
         }
 
         binding.btnEdit.setOnClickListener {
-            // TODO: navigate to edit user data profile
+            navController.navigate(R.id.action_profileFragment_to_editProfileFragment)
         }
 
         binding.contactUs.setOnClickListener {
