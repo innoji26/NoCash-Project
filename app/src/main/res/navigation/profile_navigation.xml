@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_profileFragment_to_aboutUsFragment"
             app:destination="@id/aboutUsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
     </fragment>
     <fragment
         android:id="@+id/contactUsFragment"
@@ -43,4 +46,9 @@
         android:name="com.beranidigital.nocash.ui.profile.informations.AboutUsFragment"
         android:label="Tentang Kami"
         tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.beranidigital.nocash.ui.profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
 </navigation>
