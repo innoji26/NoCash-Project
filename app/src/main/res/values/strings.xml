@@ -24,6 +24,10 @@
         <item>Laki-laki</item>
         <item>Perempuan</item>
     </string-array>
+    <string-array name="category">
+        <item>Warung</item>
+        <item>Toko</item>
+    </string-array>
 
     <string name="tips_scan_ktp">Foto Kartu Identitas Anda berupa KTP atau SIM dengan klik tombol \'Ambil Foto\', Pastikan kartu identitas Anda sudah jelas</string>
     <string-array name="type_user">
@@ -153,4 +157,9 @@
     </string>
     <string name="closing_about_us">Terima kasih telah memilih Nocash sebagai partner terpercaya dalam mengelola hutang piutang Anda. Kami berharap dapat terus mendukung Anda dalam mencapai kesuksesan finansial dan bisnis yang lebih baik.</string>
     <string name="confirm_logout">Apakah anda yakin ingin keluar akun?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="placholder_seller">Buka Toko Anda dan mulailah mencatat setiap transaksi hutang piutang dengan fitur-fitur canggih Nocash</string>
+    <string name="success_register">Selamat! Toko Anda  kini sudah siap digunakan. Mulailah mencatat transaksi dan mengelola hutang piutang dengan mudah dan efisien.</string>
 </resources>
