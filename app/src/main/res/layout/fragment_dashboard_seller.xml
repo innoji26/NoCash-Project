@@ -59,130 +59,30 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="15dp"
             android:orientation="vertical">
 
-            <RelativeLayout
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/layoutSummarySeller"
+                android:name="com.beranidigital.nocash.ui.seller.SummarySellerFragment"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                tools:layout="@layout/fragment_summary_seller" />
 
-                <LinearLayout
-                    android:id="@+id/layoutNominal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/corner_shape"
-                    android:backgroundTint="?attr/colorPrimary"
-                    android:orientation="vertical"
-                    android:paddingHorizontal="10dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="50dp">
-
-                    <TextView
-                        android:id="@+id/tv_description"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Total Nominal Transaksi"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="10sp" />
-
-                    <TextView
-                        android:id="@+id/tv_nominal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="26sp"
-                        android:textStyle="bold"
-                        android:text="Rp 500.000" />
-
-
-                </LinearLayout>
-
-            </RelativeLayout>
-
-            <androidx.cardview.widget.CardView
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/layoutMenuSeller"
+                android:name="com.beranidigital.nocash.ui.seller.MenuSellerFragment"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                app:cardCornerRadius="?attr/cornerRadius"
-                app:cardElevation="10dp"
-                android:layout_marginHorizontal="25dp"
-                android:translationY="-40dp"
-                >
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_menu_seller" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    >
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        >
-                        <TextView
-                            android:id="@+id/nominalLunas"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="8"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
-                            android:textAlignment="center"
-                            />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Lunas"
-                            />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        >
-                        <TextView
-                            android:id="@+id/nominalHutang"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="5"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
-                            android:textAlignment="center"
-                            />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Hutang"
-                            />
-
-
-                    </LinearLayout>
-
-                    <ImageView
-                        android:id="@+id/btnAddTransaction"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:paddingVertical="10dp"
-                        android:src="@drawable/ic_add_shape"
-                        />
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/layoutActivityPiutang"
+                android:name="com.beranidigital.nocash.ui.seller.ActivityPiutangFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                tools:layout="@layout/fragment_activity_piutang" />
 
         </LinearLayout>
 

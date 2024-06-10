@@ -32,7 +32,7 @@ class SellerFragment : Fragment() {
         val navGraph = graphInflater.inflate(R.navigation.seller_navigation)
         navController = navHostFragment.navController
 
-        navGraph.setStartDestination(R.id.dashboardSeller)
+//        navGraph.setStartDestination(R.id.dashboardSeller) // for change the start destination
 
         navController.graph = navGraph
 
