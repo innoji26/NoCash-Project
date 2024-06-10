@@ -38,9 +38,9 @@ class MainHomeActivity : AppCompatActivity() {
     private fun MainHomeActivity.setUpBottomNavigation() {
         val bottomNavigationItems = arrayOf(
             CbnMenuItem(
-                R.drawable.ic_buyer_title,
-                R.drawable.avd_buyer,
-                R.id.buyerFragment,
+                R.drawable.ic_seller_title,
+                R.drawable.avd_seller,
+                R.id.sellerFragment,
             ),
             CbnMenuItem(
                 R.drawable.ic_home_title,
@@ -48,9 +48,9 @@ class MainHomeActivity : AppCompatActivity() {
                 R.id.homeFragment,
             ),
             CbnMenuItem(
-                R.drawable.ic_seller_title,
-                R.drawable.avd_seller,
-                R.id.sellerFragment,
+                R.drawable.ic_buyer_title,
+                R.drawable.avd_buyer,
+                R.id.buyerFragment,
             )
         )
 

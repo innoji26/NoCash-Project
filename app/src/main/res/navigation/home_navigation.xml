@@ -12,7 +12,7 @@
     <fragment
         android:id="@+id/sellerFragment"
         android:name="com.beranidigital.nocash.ui.seller.SellerFragment"
-        android:label="fragment_history"
+        android:label="fragment_seller"
         tools:layout="@layout/fragment_seller" />
     <fragment
         android:id="@+id/buyerFragment"

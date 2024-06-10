@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seller_navigation"
+    app:startDestination="@id/placeholderSellerFragment">
+
+    <fragment
+        android:id="@+id/placeholderSellerFragment"
+        android:name="com.beranidigital.nocash.ui.seller.PlaceholderSellerFragment"
+        android:label="fragment_placeholder_seller"
+        tools:layout="@layout/fragment_placeholder_seller" >
+        <action
+            android:id="@+id/action_placeholderSellerFragment_to_registerSellerFragment"
+            app:destination="@id/registerSellerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerSellerFragment"
+        android:name="com.beranidigital.nocash.ui.seller.RegisterSellerFragment"
+        android:label="fragment_register_seller"
+        tools:layout="@layout/fragment_register_seller" >
+        <action
+            android:id="@+id/action_registerSellerFragment_to_dashboardSeller"
+            app:destination="@id/dashboardSeller" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardSeller"
+        android:name="com.beranidigital.nocash.ui.seller.DashboardSellerFragment"
+        android:label="dashboard_seller"
+        tools:layout="@layout/fragment_dashboard_seller" />
+</navigation>
