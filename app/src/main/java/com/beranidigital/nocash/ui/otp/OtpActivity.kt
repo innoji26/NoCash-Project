@@ -85,7 +85,7 @@ class OtpActivity: AppCompatActivity() {
     private fun resendVerificationCode(phoneNumber: String) {
         val options = PhoneAuthOptions.newBuilder(firebaseAuth)
             .setPhoneNumber(phoneNumber)
-            .setTimeout(300L, TimeUnit.SECONDS)
+            .setTimeout(60L, TimeUnit.SECONDS)
             .setActivity(this)
             .setCallbacks(callbacks)
             .setForceResendingToken(resendingToken)

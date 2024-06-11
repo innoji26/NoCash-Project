@@ -115,7 +115,7 @@ class LoginActivity : AppCompatActivity() {
     private fun sendVerificationCode(phoneNumber: String) {
         val options = PhoneAuthOptions.newBuilder(firebaseAuth)
             .setPhoneNumber(phoneNumber)
-            .setTimeout(300L, TimeUnit.SECONDS)
+            .setTimeout(60L, TimeUnit.SECONDS)
             .setActivity(this)
             .setCallbacks(callbacks)
             .build()

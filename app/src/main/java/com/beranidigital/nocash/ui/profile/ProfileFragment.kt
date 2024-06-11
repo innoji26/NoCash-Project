@@ -14,11 +14,15 @@ import androidx.navigation.fragment.NavHostFragment
 import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.FragmentProfileBinding
 import com.beranidigital.nocash.ui.login.LoginActivity
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
 
 class ProfileFragment : Fragment() {
 
     private lateinit var binding: FragmentProfileBinding
     private lateinit var navController: NavController
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,6 +36,17 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         initNavHost()
+
+        auth = Firebase.auth
+        val firebaseUser = auth.currentUser
+
+        if(firebaseUser == null){
+            //not signed in, launch the login activity
+            val newIntent = Intent(requireContext(), LoginActivity::class.java)
+            newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            startActivity(newIntent)
+            return
+        }
 
         binding.toolbar.setNavigationOnClickListener {
             requireActivity().onBackPressed()
@@ -72,9 +87,7 @@ class ProfileFragment : Fragment() {
             }
             dialog.findViewById<Button>(R.id.btnLogout).setOnClickListener {
                 dialog.dismiss()
-                val newIntent = Intent(requireContext(), LoginActivity::class.java)
-                newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
-                startActivity(newIntent)
+                signOut()
             }
             dialog.show()
         }
@@ -83,5 +96,12 @@ class ProfileFragment : Fragment() {
     private fun initNavHost() {
         navController = NavHostFragment.findNavController(this)
 
+    }
+
+    private fun signOut() {
+        auth.signOut()
+        val newIntent = Intent(requireContext(), LoginActivity::class.java)
+        newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        startActivity(newIntent)
     }
 }
