@@ -30,7 +30,7 @@ class ActivityPiutangFragment : Fragment() {
         recycleView = binding.rvPiutang
         recycleView.layoutManager = LinearLayoutManager(requireContext())
         val data  =  mutableListOf<HutangModel>()
-        for (i in 1..5){
+        for (i in 1..7){
             data.add(
                 HutangModel(
                     1,

@@ -1,11 +1,10 @@
 package com.beranidigital.nocash.ui.seller
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.beranidigital.nocash.R
+import androidx.fragment.app.Fragment
 import com.beranidigital.nocash.databinding.FragmentSummarySellerBinding
 
 class SummarySellerFragment : Fragment() {
@@ -18,6 +17,14 @@ class SummarySellerFragment : Fragment() {
     ): View {
         binding = FragmentSummarySellerBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnAddTransaction.setOnClickListener {
+            // Handle when button add transaction clicked
+        }
     }
 
 
