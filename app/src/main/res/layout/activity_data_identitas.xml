@@ -6,21 +6,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbars="none"
     tools:context=".ui.identitas.DataIdentitasActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="15dp"
-        android:paddingHorizontal="15dp"
-        android:paddingBottom="30dp"
-        >
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
             android:text="@string/textup2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -29,21 +26,23 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/personaldata"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/layoutNama"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
             android:hint="Nama"
             app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7">
 
@@ -56,11 +55,12 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/layoutNik"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
             android:hint="NIK"
-            android:layout_marginTop="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/layoutNama">
@@ -73,34 +73,35 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/layoutDateOfBirth"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:id="@+id/layoutTtl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
             android:hint="@string/dateborn"
-            android:layout_marginTop="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/layoutNik">
 
-            <AutoCompleteTextView
-                android:id="@+id/edtDateOfBirth"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtTtl"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="none"
-                android:focusable="false"
-                tools:ignore="LabelFor" />
+                android:layout_height="match_parent"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/layoutAlamat"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:hint="@string/live"
-            android:layout_marginTop="5dp"
-            app:endIconMode="clear_text"
-            app:layout_constraintTop_toBottomOf="@+id/layoutDateOfBirth"
-            tools:layout_editor_absoluteX="15dp">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Alamat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutTtl">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtAlamat"
@@ -112,15 +113,17 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/layoutEmail"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:hint="@string/email"
-            android:layout_marginTop="5dp"
-            app:endIconMode="clear_text"
-            app:layout_constraintTop_toBottomOf="@+id/layoutAlamat"
-            tools:layout_editor_absoluteX="15dp">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutAlamat">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtemail"
+                android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="text" />
@@ -129,12 +132,14 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/layoutPhone"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="5dp"
-            android:hint="No Hp"
-            app:endIconMode="clear_text"
-            app:layout_constraintTop_toBottomOf="@+id/layoutEmail"
-            tools:layout_editor_absoluteX="15dp">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutEmail">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtPhone"
@@ -146,12 +151,14 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/layoutGender"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
             android:hint="Jenis Kelamin"
-            app:endIconMode="clear_text"
-            app:layout_constraintTop_toBottomOf="@+id/layoutPhone"
-            tools:layout_editor_absoluteX="15dp">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutPhone">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtGender"
@@ -166,7 +173,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/agree_privacy_policy"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/layoutGender"
             app:layout_constraintTop_toBottomOf="@+id/layoutGender" />
 
         <TextView
@@ -190,15 +197,16 @@
             android:layout_marginStart="32dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/checkboxPrivacyPolicy" />
+
         <Button
             android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:text="@string/save"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/privacy" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

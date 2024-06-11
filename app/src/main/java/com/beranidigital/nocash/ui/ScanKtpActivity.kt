@@ -99,7 +99,6 @@ class ScanKtpActivity : AppCompatActivity() {
 
     private fun saveUserProfile(imageUrl: String) {
         val userId = auth.currentUser?.uid
-//        val userId = "public_user"
 
         if (userId != null) {
             val user = UsersModel(
@@ -111,7 +110,7 @@ class ScanKtpActivity : AppCompatActivity() {
                 phone = auth.currentUser?.phoneNumber,
                 email = auth.currentUser?.email,
                 imageKtp = imageUrl,
-                imageProfile = null
+                imageProfile = ""
             )
             CoroutineScope(Dispatchers.Main).launch {
                 try {

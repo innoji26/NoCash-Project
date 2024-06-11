@@ -39,10 +39,10 @@ class DataIdentitasActivity : AppCompatActivity() {
         val name = binding.edtNama.text.toString().trim()
         val nik = binding.edtNik.text.toString().trim()
         val gender = binding.edtGender.text.toString().trim()
-        val ttl = binding.edtDateOfBirth.text.toString().trim()
+        val ttl = binding.edtTtl.text.toString().trim()
         val address = binding.edtAlamat.text.toString().trim()
         val phone = binding.edtPhone.text.toString().trim()
-        val email = binding.edtemail.text.toString().trim()
+        val email = binding.edtEmail.text.toString().trim()
 
         if (name.isEmpty() || nik.isEmpty() || gender.isEmpty() || ttl.isEmpty() || address.isEmpty() || phone.isEmpty() || email.isEmpty()) {
             Toast.makeText(this, "Please fill out all fields", Toast.LENGTH_SHORT).show()

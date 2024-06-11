@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.beranidigital.nocash.databinding.ActivitySplashScreenBinding
+import com.beranidigital.nocash.ui.identitas.DataIdentitasActivity
 import com.beranidigital.nocash.ui.login.LoginActivity
 import kotlinx.coroutines.*
 class SplashScreen : AppCompatActivity() {
