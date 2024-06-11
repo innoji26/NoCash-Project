@@ -162,4 +162,8 @@
 
     <string name="placholder_seller">Buka Toko Anda dan mulailah mencatat setiap transaksi hutang piutang dengan fitur-fitur canggih Nocash</string>
     <string name="success_register">Selamat! Toko Anda  kini sudah siap digunakan. Mulailah mencatat transaksi dan mengelola hutang piutang dengan mudah dan efisien.</string>
+
+    <string name="choose_an_image_from">Choose an Image From</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
 </resources>
