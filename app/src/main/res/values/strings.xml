@@ -149,4 +149,8 @@
     </string>
     <string name="closing_about_us">Terima kasih telah memilih Nocash sebagai partner terpercaya dalam mengelola hutang piutang Anda. Kami berharap dapat terus mendukung Anda dalam mencapai kesuksesan finansial dan bisnis yang lebih baik.</string>
     <string name="confirm_logout">Apakah anda yakin ingin keluar akun?</string>
+
+    <string name="choose_an_image_from">Choose an Image From</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
 </resources>

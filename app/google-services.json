@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "410114690941-29euflofpopbvlgrees3bcogmoljrur3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.beranidigital.nocash",
+            "certificate_hash": "bd08885e281424a6cf230a4413842b1192569cc5"
+          }
+        },
+        {
           "client_id": "410114690941-kdciihh5r9njr0l7ctdu73a75d95vvbt.apps.googleusercontent.com",
           "client_type": 3
         }

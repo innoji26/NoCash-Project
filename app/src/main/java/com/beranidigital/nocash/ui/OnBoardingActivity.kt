@@ -1,11 +1,11 @@
 package com.beranidigital.nocash.ui
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.beranidigital.nocash.databinding.ActivityOnBoardingBinding
 import com.beranidigital.nocash.ui.login.LoginActivity
-import com.beranidigital.nocash.ui.registrasi.RegistrasiActivity
 
 class OnBoardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnBoardingBinding
@@ -22,11 +22,16 @@ class OnBoardingActivity : AppCompatActivity() {
     private fun buttonListener(){
         binding.btnToLogin.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+            onBoardingFinished()
         }
 
-        binding.btnToRegis.setOnClickListener {
-            startActivity(Intent(this, RegistrasiActivity::class.java))
-            finish()
-        }
+    }
+
+    private fun onBoardingFinished(){
+        val sharePref = getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
+        val editor = sharePref.edit()
+        editor.putBoolean("Finished", true)
+        editor.apply()
     }
 }

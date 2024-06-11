@@ -38,39 +38,38 @@
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/layoutNoHp"
+            android:id="@+id/layoutNama"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="10dp"
-            android:hint="@string/phone"
+            android:hint="Nama"
             app:endIconMode="clear_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtNoHp"
+                android:id="@+id/edtNama"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="phone" />
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/layoutTypeUser"
+            android:id="@+id/layoutNik"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/status_user"
+            android:hint="NIK"
             android:layout_marginTop="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/layoutNoHp">
+            app:layout_constraintTop_toBottomOf="@+id/layoutNama">
 
-            <AutoCompleteTextView
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtNik"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="none"
-                app:simpleItems="@array/type_user"
-                tools:ignore="LabelFor" />
+                android:layout_height="match_parent"
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -82,7 +81,7 @@
             android:layout_marginTop="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/layoutTypeUser">
+            app:layout_constraintTop_toBottomOf="@+id/layoutNik">
 
             <AutoCompleteTextView
                 android:id="@+id/edtDateOfBirth"
@@ -128,37 +127,37 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/layoutPassword"
+            android:id="@+id/layoutPhone"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="5dp"
-            android:hint="@string/password"
+            android:hint="No Hp"
             app:endIconMode="clear_text"
             app:layout_constraintTop_toBottomOf="@+id/layoutEmail"
             tools:layout_editor_absoluteX="15dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtpassword"
+                android:id="@+id/edtPhone"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="textPassword" />
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/layoutConfirmPassword"
+            android:id="@+id/layoutGender"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="5dp"
-            android:hint="@string/confirm_password"
+            android:hint="Jenis Kelamin"
             app:endIconMode="clear_text"
-            app:layout_constraintTop_toBottomOf="@+id/layoutPassword"
+            app:layout_constraintTop_toBottomOf="@+id/layoutPhone"
             tools:layout_editor_absoluteX="15dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtconfirmpassword"
+                android:id="@+id/edtGender"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="textPassword" />
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <CheckBox
@@ -168,7 +167,7 @@
             android:layout_marginTop="8dp"
             android:text="@string/agree_privacy_policy"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/layoutConfirmPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/layoutGender" />
 
         <TextView
             android:id="@+id/termandcondition"
@@ -180,7 +179,7 @@
             android:text="@string/term_and_conditions"
 
             app:layout_constraintStart_toEndOf="@+id/checkboxPrivacyPolicy"
-            app:layout_constraintTop_toBottomOf="@+id/layoutConfirmPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/layoutGender" />
 
         <TextView
             android:id="@+id/privacy"
