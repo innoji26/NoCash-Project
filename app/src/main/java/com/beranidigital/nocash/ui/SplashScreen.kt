@@ -21,9 +21,6 @@ class SplashScreen : AppCompatActivity() {
             setupSplashScreen()
         }
 
-//        Handler().postDelayed({
-//            setupSplashScreen()
-//        }, delayMs)
     }
 
     private fun checkOnBoarding(): Boolean{

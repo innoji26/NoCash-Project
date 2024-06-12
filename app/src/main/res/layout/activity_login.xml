@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:overScrollMode="never"
-    android:paddingHorizontal="30dp"
-    android:scrollbars="none"
     tools:context=".ui.login.LoginActivity">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBarLayout"
@@ -47,9 +40,6 @@
             app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
 
 
-
-
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/layoutNoHp"
             android:layout_width="match_parent"
@@ -81,32 +71,4 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/layoutNoHp" />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/tvCreateAccount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="5dp"
-            android:text="Belum punya akun?"
-            android:textColor="@color/blue"
-            app:layout_constraintEnd_toStartOf="@+id/btn_text_register"
-            app:layout_constraintTop_toTopOf="@+id/btn_text_register" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/btn_text_register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Daftar"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/btnLogin"
-            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
-
-        <Space
-            android:id="@+id/space"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            app:layout_constraintTop_toBottomOf="@+id/btn_text_register" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

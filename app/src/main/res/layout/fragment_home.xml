@@ -45,7 +45,7 @@
                     android:src="@drawable/ic_profile" />
 
                 <TextView
-                    android:id="@+id/tv_nama_pengguna"
+                    android:id="@+id/tv_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -181,12 +181,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
-                android:src="@drawable/img_welcome"
+                android:src="@drawable/logo_app"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:contentDescription="welcome_illustration" />
+                android:contentDescription="logo_app" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
