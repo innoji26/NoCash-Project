@@ -94,6 +94,7 @@ dependencies {
     implementation("np.com.susanthapa:curved_bottom_navigation:0.6.5")
 
     implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.activity:activity:1.9.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

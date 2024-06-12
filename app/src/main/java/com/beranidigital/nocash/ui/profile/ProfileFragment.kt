@@ -18,6 +18,8 @@ import com.beranidigital.nocash.data.model.UsersModel
 import com.beranidigital.nocash.databinding.FragmentProfileBinding
 import com.beranidigital.nocash.ui.home.HomeFragment
 import com.beranidigital.nocash.ui.login.LoginActivity
+import com.beranidigital.nocash.ui.main_navigation.MainHomeActivity
+import com.beranidigital.nocash.ui.profile.editProfil.EditProfilActivity
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
@@ -68,7 +70,8 @@ class ProfileFragment : Fragment() {
         }
 
         binding.btnEdit.setOnClickListener {
-            // TODO: navigate to edit user data profile
+            val newIntent = Intent(requireContext(), EditProfilActivity::class.java)
+            startActivity(newIntent)
         }
 
         binding.contactUs.setOnClickListener {
