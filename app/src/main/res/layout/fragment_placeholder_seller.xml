@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="15dp"
         android:padding="35dp"
-        android:src="@drawable/logo_app"
+        android:src="@drawable/img_open_seller"
         />
 
 
