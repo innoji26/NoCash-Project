@@ -1,10 +1,12 @@
 package com.beranidigital.nocash.ui
 
 import android.Manifest
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.ActivityScanKtpBinding
+import com.beranidigital.nocash.ui.main_navigation.MainHomeActivity
 
 class ScanKtpActivity : AppCompatActivity() {
     private lateinit var binding: ActivityScanKtpBinding
@@ -15,7 +17,13 @@ class ScanKtpActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
+        binding.btnSave.setOnClickListener {
+            val newIntent = Intent(this, MainHomeActivity::class.java)
+            newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            startActivity(newIntent)
+        }
     }
+
 
     companion object{
         const val CAMERA_X_RESULT = 200

@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.beranidigital.nocash.R
 import com.beranidigital.nocash.databinding.ActivityOtpBinding
+import com.beranidigital.nocash.ui.ScanKtpActivity
 import com.beranidigital.nocash.ui.main_navigation.MainHomeActivity
 import com.google.android.material.snackbar.Snackbar
 
@@ -31,10 +32,21 @@ class OtpActivity: AppCompatActivity() {
         }
 
         binding.btnContinue.setOnClickListener {
-            Snackbar.make(binding.root, "Verify code", Snackbar.LENGTH_SHORT).show()
-            val intent = Intent(this, MainHomeActivity::class.java)
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
-            startActivity(intent)
+
+            val intent : String = intent.getStringExtra("type") as String
+            val newIntent : Intent
+            when(intent){
+                "register" -> {
+                    newIntent = Intent(this, ScanKtpActivity::class.java)
+                }
+                else -> {
+                    Snackbar.make(binding.root, "Verify code", Snackbar.LENGTH_SHORT).show()
+                    newIntent = Intent(this, MainHomeActivity::class.java)
+                    newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                }
+            }
+            startActivity(newIntent)
+
         }
     }
 

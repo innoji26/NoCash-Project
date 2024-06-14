@@ -17,15 +17,10 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
-        val toolbar = binding.toolbar
-        setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayShowTitleEnabled(false)
-        toolbar.setNavigationOnClickListener {
-            onBackPressed()
-        }
-
         binding.btnLogin.setOnClickListener {
-            startActivity(Intent(this, OtpActivity::class.java))
+            val intent = Intent(this, OtpActivity::class.java)
+            intent.putExtra("type", "login")
+            startActivity(intent)
         }
 
         val btnTextRegister = binding.btnTextRegister
