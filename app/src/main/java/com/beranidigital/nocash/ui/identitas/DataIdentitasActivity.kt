@@ -46,7 +46,7 @@ class DataIdentitasActivity : AppCompatActivity() {
         val user=UsersModel(name,numberInduk,genderAdd,address,dateBorn,email,imagektp,imageprofile)
         database.child("users").child(numberInduk).setValue(user)
             .addOnCompleteListener {
-                Toast.makeText(this, "Data added successfully", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Data added successfully ", Toast.LENGTH_SHORT).show()
             }
             .addOnFailureListener {
                 Toast.makeText(this, "Failed to add data", Toast.LENGTH_SHORT).show()
