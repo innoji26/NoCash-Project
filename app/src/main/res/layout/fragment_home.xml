@@ -222,8 +222,7 @@
             android:layout_height="120dp"
             android:layout_marginVertical="20dp"
             android:orientation="horizontal"
-            tools:listitem="@layout/item_promo"
-            />
+            tools:listitem="@layout/item_promo"/>
     </LinearLayout>
 
 

@@ -23,8 +23,14 @@
 
     <string name="tips_scan_ktp">Foto Kartu Identitas Anda berupa KTP atau SIM dengan klik tombol \'Ambil Foto\', Pastikan kartu identitas Anda sudah jelas</string>
     <string-array name="type_user">
-        <item name="item1">Pembeli</item>
-        <item name="item2">Penjual</item>
+    <item name="item1">Pembeli</item>
+    <item name="item2">Penjual</item>
+</string-array>
+
+    <string-array name="gender">
+        <item name="item1">Laki-Laki</item>
+        <item name="item2">Perempuan</item>
+        <item name="item2">Tidak Perlu Disebutkan</item>
     </string-array>
 
 
@@ -98,7 +104,6 @@
     <string name="save">Simpan</string>
     <string name="step"> %1$d dari %2$d langkah </string>
     <string name="title_pin">%1$s PIN Keamanan</string>
-<<<<<<< HEAD
     <string name="login">login</string>
     <string name="Not_Have_Account">Belum punya akun? Daftar dulu</string>
     <string name="_0_detik">0 detik</string>
@@ -108,7 +113,7 @@
     <string name="term_and_conditions"> Syarat dan ketentuan\n</string>
     <string name="privacy">Kebijakan privasi</string>
 
-=======
+
     <string name="contact_us">
         Kami di Nocash selalu siap membantu Anda. Jika Anda memiliki pertanyaan, saran, atau 
         membutuhkan bantuan, jangan ragu untuk menghubungi kami melalui salah satu cara di bawah ini:\n
@@ -126,7 +131,7 @@
         menghubungi kami kapan saja. Terima kasih telah memilih Nocash!\n\n
         Nocash - Solusi Cerdas untuk Hutang Piutang Anda.
     </string>
->>>>>>> 9401669b05d54c9b17b807dec5af2000cec3d824
+
 
     <string name="termCondition">
         Syarat dan Ketentuan Penggunaan Aplikasi Nocash
@@ -156,4 +161,7 @@
     <string name="closing_about_us">Terima kasih telah memilih Nocash sebagai partner terpercaya dalam mengelola hutang piutang Anda. Kami berharap dapat terus mendukung Anda dalam mencapai kesuksesan finansial dan bisnis yang lebih baik.</string>
     <string name="confirm_logout">Apakah anda yakin ingin keluar akun?</string>
     <string name="end">dan</string>
+    <string name="name">Nama Lengkap</string>
+    <string name="jeniskelamin">Jenis Kelamin\n</string>
+    <string name="nik">Masukan Nomer Nik\n</string>
 </resources>

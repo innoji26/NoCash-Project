@@ -12,7 +12,7 @@
         android:layout_width="350dp"
         android:layout_height="@dimen/height_component"
         android:layout_marginTop="500dp"
-        android:backgroundTint="@color/blue_violet"
+        android:backgroundTint="@color/blue"
         android:text="@string/login"
         app:cornerRadius="18dp"
         app:layout_constraintEnd_toEndOf="parent"

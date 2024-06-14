@@ -4,15 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red"> #BB3322 </color>
     <color name="green">#1EB336</color>
-<<<<<<< HEAD
-    <color name="blue_violet">#108ee9</color>
-    <color name="blue_violet_dark">#7915A8</color>
-    <color name="old_silver">#858585</color>
-=======
-
     <color name="alice_blue">#F3FBFF</color>
     <color name="blue">#108EE9</color>
     <color name="blue_dark">#09558B</color>
     <color name="grey">#858585</color>
->>>>>>> 9401669b05d54c9b17b807dec5af2000cec3d824
+
 </resources>
