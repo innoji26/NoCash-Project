@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
+import com.beranidigital.nocash.data.model.DebtsModel
 import com.beranidigital.nocash.data.model.UsersModel
 import com.beranidigital.nocash.databinding.FragmentHomeBinding
 import com.beranidigital.nocash.ui.home.promo.RecycleViewAdapterPromo
@@ -66,6 +67,8 @@ class HomeFragment : Fragment() {
         auth = Firebase.auth
         val firebaseUser = auth.currentUser
         db = Firebase.database
+        dbRef = FirebaseDatabase.getInstance().reference
+
 
         if(firebaseUser == null){
             //not signed in, launch the login activity
@@ -75,9 +78,6 @@ class HomeFragment : Fragment() {
             return
         }
 
-
-
-
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = when (position) {
                 0 -> "Hutang"
@@ -86,9 +86,60 @@ class HomeFragment : Fragment() {
         }.attach()
 
         profileNavigation()
-
         setupPromo()
         setUserData()
+        getCountDataHutang()
+        getCountDataPiutang()
+    }
+
+    private fun getCountDataPiutang(){
+        val currentUser = auth.currentUser?.uid
+        val query = dbRef.child("debts").orderByChild("creditorId").equalTo(currentUser)
+        query.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val debtList = mutableListOf<DebtsModel>()
+                for (debtSnapshot in snapshot.children) {
+                    val debt = debtSnapshot.getValue(DebtsModel::class.java)
+                    if (debt != null && debt.status == "Belum Lunas" && debt.userAgree == true) {
+                        debtList.add(debt)
+                    }
+                }
+
+                // Jumlah data untuk id tertentu
+                val countDebts = debtList.size
+                binding.countPiutang.text = countDebts.toString()
+                Log.d("TAG", "Jumlah Piutang untuk user $currentUser adalah: $countDebts")
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                // Handle possible errors.
+            }
+        })
+    }
+
+    private fun getCountDataHutang(){
+        val currentUser = auth.currentUser?.uid
+        val query = dbRef.child("debts").orderByChild("debtorId").equalTo(currentUser)
+        query.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val debtList = mutableListOf<DebtsModel>()
+                for (debtSnapshot in snapshot.children) {
+                    val debt = debtSnapshot.getValue(DebtsModel::class.java)
+                    if (debt != null && debt.status == "Belum Lunas" && debt.userAgree == true) {
+                        debtList.add(debt)
+                    }
+                }
+
+                // Jumlah data untuk id tertentu
+                val countDebts = debtList.size
+                binding.countHutang.text = countDebts.toString()
+                Log.d("TAG", "Jumlah hutang untuk user $currentUser adalah: $countDebts")
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                // Handle possible errors.
+            }
+        })
     }
 
     private fun setUserData(){
@@ -125,7 +176,6 @@ class HomeFragment : Fragment() {
     private fun updateUI(currentUser: FirebaseUser?){
         if(currentUser != null){
             startActivity(Intent(requireContext(), MainHomeActivity::class.java))
-
         }
     }
 

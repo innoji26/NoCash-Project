@@ -90,6 +90,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
+                    android:id="@+id/countHutang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3"
@@ -120,6 +121,7 @@
                 app:layout_constraintVertical_bias="0.5">
 
                 <TextView
+                    android:id="@+id/countPiutang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="2"
@@ -224,6 +226,7 @@
             android:orientation="horizontal"
             tools:listitem="@layout/item_promo"
             />
+
     </LinearLayout>
 
 

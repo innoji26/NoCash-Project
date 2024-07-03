@@ -5,11 +5,11 @@ import com.google.firebase.database.IgnoreExtraProperties
 @IgnoreExtraProperties
 data class TransactionModel(
     val debtId: String,
-    val shopId: String,
-    val type: String,
     val amount: Int,
-    val createdAt: String,
-    val updatedAt: String,
     val status: String,
-    val imageTransaction: String
-)
+    val imageTransaction: String? = null,
+    val createdAt: Long = System.currentTimeMillis(),
+    var updatedAt: Long = System.currentTimeMillis()
+){
+
+}

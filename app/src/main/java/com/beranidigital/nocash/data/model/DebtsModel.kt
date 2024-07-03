@@ -4,13 +4,16 @@ import com.google.firebase.database.IgnoreExtraProperties
 
 @IgnoreExtraProperties
 data class DebtsModel(
-    val debtorId: Int,
-    val shopeerId: Int,
-    val amount: Int,
-    val description: String,
-    val dueDate: String,
-    val status: String,
-    val createdAt: String,
-    val updatedAt: String,
-    val imageDebt: String? = null,
-)
+    val debtorId: String = "",
+    val creditorId: String = "",
+    val amount: String = "0",
+    val description: String = "",
+    val dueDate: String = "",
+    var status: String? = "Belum Lunas",
+    var totalPaid: String? = "0", // Jumlah total yang sudah dibayar
+    val createdAt: Long = System.currentTimeMillis(),
+    var updatedAt: Long = System.currentTimeMillis(),
+    val userAgree: Boolean? = false
+){
+
+}

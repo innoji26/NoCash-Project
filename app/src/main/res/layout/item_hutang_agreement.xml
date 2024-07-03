@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/alice_blue"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/iconItem"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_market" />
+
+        <TextView
+            android:id="@+id/titleItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/descriptionItem"
+            app:layout_constraintStart_toEndOf="@+id/iconItem"
+            app:layout_constraintTop_toTopOf="@+id/iconItem"
+            tools:text="Toko Segala ada" />
+
+        <TextView
+            android:id="@+id/descriptionItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iconItem"
+            app:layout_constraintStart_toEndOf="@+id/iconItem"
+            app:layout_constraintTop_toBottomOf="@+id/titleItem"
+            tools:text="Meja Belajar gahar tipe A" />
+
+
+        <TextView
+            android:id="@+id/amountItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="Rp 95.000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSetuju"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/green"
+            android:text="Setuju"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountItem" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTolak"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:backgroundTint="@color/red"
+            android:text="Tolak"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountItem" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

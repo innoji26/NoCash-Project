@@ -19,4 +19,24 @@
         android:name="com.beranidigital.nocash.ui.buyer.BuyerFragment"
         android:label="fragment_invoice"
         tools:layout="@layout/fragment_buyer" />
+    <fragment
+        android:id="@+id/checkTokoFragment"
+        android:name="com.beranidigital.nocash.ui.shop.CheckShopFragment"
+        android:label="fragment_daftar_toko"
+        tools:layout="@layout/fragment_check_shop" />
+    <fragment
+        android:id="@+id/addTokoFragment"
+        android:name="com.beranidigital.nocash.ui.shop.AddShopFragment"
+        android:label="fragment_register_toko"
+        tools:layout="@layout/fragment_add_shop" />
+    <fragment
+        android:id="@+id/shopSellerFragment"
+        android:name="com.beranidigital.nocash.ui.shop.seller.ShopSellerFragment"
+        android:label="fragment_toko"
+        tools:layout="@layout/fragment_shop_seller" />
+    <fragment
+        android:id="@+id/shopBuyerFragment"
+        android:name="com.beranidigital.nocash.ui.shop.buyer.ShopBuyerFragment"
+        android:label="fragment_toko"
+        tools:layout="@layout/fragment_shop_buyer" />
 </navigation>

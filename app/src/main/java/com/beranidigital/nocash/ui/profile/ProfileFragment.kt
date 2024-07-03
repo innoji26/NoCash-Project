@@ -20,6 +20,9 @@ import com.beranidigital.nocash.ui.home.HomeFragment
 import com.beranidigital.nocash.ui.login.LoginActivity
 import com.beranidigital.nocash.ui.main_navigation.MainHomeActivity
 import com.beranidigital.nocash.ui.profile.editProfil.EditProfilActivity
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
@@ -38,6 +41,7 @@ class ProfileFragment : Fragment() {
     private lateinit var auth: FirebaseAuth
     private lateinit var db: FirebaseDatabase
     private lateinit var dbRef: DatabaseReference
+    private lateinit var googleSignInClient: GoogleSignInClient
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -56,6 +60,14 @@ class ProfileFragment : Fragment() {
         val firebaseUser = auth.currentUser
         db = Firebase.database
 
+        //Configure Google Sign in
+        val gso = GoogleSignInOptions
+            .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestIdToken(getString(R.string.default_web_client_id))
+            .requestEmail()
+            .build()
+
+        googleSignInClient = GoogleSignIn.getClient(requireActivity(), gso)
 
         if(firebaseUser == null){
             //not signed in, launch the login activity
@@ -142,9 +154,19 @@ class ProfileFragment : Fragment() {
 
     private fun signOut() {
         auth.signOut()
-        val newIntent = Intent(requireContext(), LoginActivity::class.java)
-        newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
-        startActivity(newIntent)
+        // Sign out dari Google juga
+        googleSignInClient.signOut().addOnCompleteListener(requireActivity()) { task ->
+            if (task.isSuccessful) {
+                // Sign-out dari Firebase dan Google berhasil dilakukan
+                val newIntent = Intent(requireContext(), LoginActivity::class.java)
+                newIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(newIntent)
+                requireActivity().finish()
+            } else {
+                // Sign-out gagal
+                Toast.makeText(requireContext(), "Failed to sign out", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     companion object{

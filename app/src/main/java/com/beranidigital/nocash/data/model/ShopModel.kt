@@ -8,8 +8,8 @@ data class ShopModel(
     val shopType: String,
     val shopAddress: String,
     val userId: String,
-    val createdAt: String,
-    val updatedAt: String
+    val createdAt: Long = System.currentTimeMillis(),
+    var updatedAt: Long = System.currentTimeMillis()
 ){
 
 }

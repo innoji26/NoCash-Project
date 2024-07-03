@@ -26,6 +26,36 @@
         android:theme="@style/Theme.NoCash"
         tools:targetApi="31">
         <activity
+            android:name=".ui.shop.seller.lunas.SellerLunasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.shop.seller.piutang.SellerPiutangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.shop.buyer.lunas.BuyerLunasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.shop.buyer.aggrement.BuyerAgreementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.shop.buyer.hutang.BuyerHutangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.hutangPiutang.detail.DetailPiutangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.hutangPiutang.detail.DetailHutangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.transaksi.detail.DetailTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.transaksi.add.AddTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.hutangPiutang.add.AddHutangActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.profile.editProfil.EditProfilActivity"
             android:exported="false" />
         <activity
@@ -69,7 +99,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.login.LoginActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

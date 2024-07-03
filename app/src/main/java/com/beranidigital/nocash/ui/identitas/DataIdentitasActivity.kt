@@ -42,7 +42,7 @@ class DataIdentitasActivity : AppCompatActivity() {
         binding.layoutEmail.editText?.setText(auth.currentUser?.email ?: "")
         binding.layoutPhone.editText?.setText(auth.currentUser?.phoneNumber ?: "")
 
-        setUserData()
+//        setUserData()
     }
 
     private fun setUserData(){
@@ -87,7 +87,7 @@ class DataIdentitasActivity : AppCompatActivity() {
 
         val userId = auth.currentUser?.uid
         if (userId != null) {
-            val user = UsersModel(name, nik, gender, ttl, address, phone, email, imgKtpUri, imgProfile)
+            val user = UsersModel(name, nik, gender, ttl, address, phone, email, null, null)
             CoroutineScope(Dispatchers.Main).launch {
                 try {
                     database.getReference("users").child(userId).setValue(user).await()

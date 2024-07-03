@@ -162,9 +162,9 @@ class LoginActivity : AppCompatActivity() {
                 if (snapshot.exists()) {
                     val userModel = snapshot.getValue(UsersModel::class.java)
                     when {
-                        userModel?.imageKtp.isNullOrEmpty() -> {
-                            startActivity(Intent(this@LoginActivity, ScanKtpActivity::class.java))
-                        }
+//                        userModel?.imageKtp.isNullOrEmpty() -> {
+//                            startActivity(Intent(this@LoginActivity, ScanKtpActivity::class.java))
+//                        }
                         userModel?.name.isNullOrEmpty() || userModel?.nik.isNullOrEmpty() ||
                                 userModel?.gender.isNullOrEmpty() || userModel?.ttl.isNullOrEmpty() ||
                                 userModel?.address.isNullOrEmpty() || userModel?.email.isNullOrEmpty() ||
@@ -175,9 +175,9 @@ class LoginActivity : AppCompatActivity() {
                             startActivity(Intent(this@LoginActivity, MainHomeActivity::class.java))
                         }
                     }
-                } else {
-                    startActivity(Intent(this@LoginActivity, ScanKtpActivity::class.java))
-                }
+                } //else {
+//                    startActivity(Intent(this@LoginActivity, ScanKtpActivity::class.java))
+//                }
                 finish()
             } catch (e: Exception) {
                 Log.w("LoginActivity", "signInWithCredential:failure", e)
@@ -201,13 +201,9 @@ class LoginActivity : AppCompatActivity() {
                 if (snapshot.exists()) {
                     val userModel = snapshot.getValue(UsersModel::class.java)
                     when {
-                        userModel?.imageKtp.isNullOrEmpty() -> {
-                            startActivity(Intent(this@LoginActivity, ScanKtpActivity::class.java))
-                        }
                         userModel?.name.isNullOrEmpty() || userModel?.nik.isNullOrEmpty() ||
                                 userModel?.gender.isNullOrEmpty() || userModel?.ttl.isNullOrEmpty() ||
-                                userModel?.address.isNullOrEmpty() || userModel?.email.isNullOrEmpty() ||
-                                userModel?.imageProfile.isNullOrEmpty() -> {
+                                userModel?.address.isNullOrEmpty() || userModel?.email.isNullOrEmpty() -> {
                             startActivity(Intent(this@LoginActivity, DataIdentitasActivity::class.java))
                         }
                         else -> {
@@ -215,7 +211,7 @@ class LoginActivity : AppCompatActivity() {
                         }
                     }
                 } else {
-                    startActivity(Intent(this@LoginActivity, ScanKtpActivity::class.java))
+                    startActivity(Intent(this@LoginActivity, DataIdentitasActivity::class.java))
                     finish()
                 }
             } catch (e: Exception) {

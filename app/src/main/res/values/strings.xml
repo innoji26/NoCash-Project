@@ -153,4 +153,7 @@
     <string name="choose_an_image_from">Choose an Image From</string>
     <string name="gallery">Gallery</string>
     <string name="camera">Camera</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="buka_toko">Buka Toko Anda dan mulailah mencatat setiap transaksi hutang piutang dengan fitur-fitur canggih Nocash</string>
 </resources>
